@@ -1,0 +1,6 @@
+C:\Projetos\FogGerenciadorDeVendas\FogGerenciadorDeVendas.Dominio\bin\Debug\FogGerenciadorDeVendas.Dominio.dll
+C:\Projetos\FogGerenciadorDeVendas\FogGerenciadorDeVendas.Dominio\bin\Debug\FogGerenciadorDeVendas.Dominio.pdb
+C:\Projetos\FogGerenciadorDeVendas\FogGerenciadorDeVendas.Dominio\obj\Debug\FogGerenciadorDeVendas.Dominio.csprojAssemblyReference.cache
+C:\Projetos\FogGerenciadorDeVendas\FogGerenciadorDeVendas.Dominio\obj\Debug\FogGerenciadorDeVendas.Dominio.csproj.CoreCompileInputs.cache
+C:\Projetos\FogGerenciadorDeVendas\FogGerenciadorDeVendas.Dominio\obj\Debug\FogGerenciadorDeVendas.Dominio.dll
+C:\Projetos\FogGerenciadorDeVendas\FogGerenciadorDeVendas.Dominio\obj\Debug\FogGerenciadorDeVendas.Dominio.pdb
