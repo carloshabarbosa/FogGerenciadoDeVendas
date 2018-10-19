@@ -1,4 +1,4 @@
-﻿using FogGerenciadorDeVendas.Telas.Controles;
+﻿using FogGerenciadorDeVendas.Telas.Controles.Produtos;
 using MetroFramework.Forms;
 using System;
 using System.Drawing;
@@ -17,8 +17,9 @@ namespace FogGerenciadorDeVendas
         private void metroButton3_Click(object sender, EventArgs e)
         {
             var produtos = Program.container.Resolve<Produtos>();
-            produtos.Size = metroPanel1.Size;
-            metroPanel1.Controls.Add(produtos);
+            produtos.Size = panel_principal.Size;
+            panel_principal.Controls.Clear();
+            panel_principal.Controls.Add(produtos);
         }
     }
 }

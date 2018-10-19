@@ -1,10 +1,11 @@
 ﻿using FogGerenciadorDeVendas.Dominio.Produtos;
+using FogGerenciadorDeVendas.Telas.Helper;
 using MetroFramework.Controls;
-using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using Unity;
 
-namespace FogGerenciadorDeVendas.Telas.Controles
+namespace FogGerenciadorDeVendas.Telas.Controles.Produtos
 {
     public partial class Produtos : MetroUserControl
     {
@@ -15,6 +16,8 @@ namespace FogGerenciadorDeVendas.Telas.Controles
             _produtosRepositorio = produtosRepositorio;
             InitializeComponent();
             RecuperarProdutos();
+            btn_edita_produto.Enabled = false;
+            btn_remover_produto.Enabled = false;
         }
         
 
@@ -45,5 +48,25 @@ namespace FogGerenciadorDeVendas.Telas.Controles
                 RecuperarProdutos(codigoOuNome);
             }
         }
+
+        private void produtos_grid_SelectionChanged(object sender, System.EventArgs e)
+        {
+            btn_edita_produto.Enabled = false;
+            btn_remover_produto.Enabled = false;
+            if (produtos_grid.SelectedRows.Count == 1)
+            {
+                btn_edita_produto.Enabled = true;
+                btn_remover_produto.Enabled = true;
+            }
+
+            
+        }
+
+        private void btn_add_produto_Click(object sender, System.EventArgs e)
+        {
+            AlterarTelaHelper.AlterarTela((MetroPanel)Parent, Program.container.Resolve<Adicionar>());
+        }
+
+        
     }
 }

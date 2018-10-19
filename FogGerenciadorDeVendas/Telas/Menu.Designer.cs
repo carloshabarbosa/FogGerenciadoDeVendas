@@ -33,7 +33,7 @@
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.panel_principal = new MetroFramework.Controls.MetroPanel();
             this.SuspendLayout();
             // 
             // metroButton1
@@ -73,23 +73,23 @@
             this.metroButton4.Text = "metroButton4";
             this.metroButton4.UseSelectable = true;
             // 
-            // metroPanel1
+            // panel_principal
             // 
-            this.metroPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.panel_principal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("metroPanel1.BackgroundImage")));
-            this.metroPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(216, 30);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(675, 457);
-            this.metroPanel1.TabIndex = 4;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.panel_principal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_principal.BackgroundImage")));
+            this.panel_principal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel_principal.HorizontalScrollbarBarColor = true;
+            this.panel_principal.HorizontalScrollbarHighlightOnWheel = false;
+            this.panel_principal.HorizontalScrollbarSize = 10;
+            this.panel_principal.Location = new System.Drawing.Point(216, 30);
+            this.panel_principal.Name = "panel_principal";
+            this.panel_principal.Size = new System.Drawing.Size(675, 457);
+            this.panel_principal.TabIndex = 4;
+            this.panel_principal.VerticalScrollbarBarColor = true;
+            this.panel_principal.VerticalScrollbarHighlightOnWheel = false;
+            this.panel_principal.VerticalScrollbarSize = 10;
             // 
             // Menu
             // 
@@ -97,7 +97,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(911, 507);
             this.ControlBox = false;
-            this.Controls.Add(this.metroPanel1);
+            this.Controls.Add(this.panel_principal);
             this.Controls.Add(this.metroButton4);
             this.Controls.Add(this.metroButton3);
             this.Controls.Add(this.metroButton2);
@@ -123,6 +123,6 @@
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroButton metroButton3;
         private MetroFramework.Controls.MetroButton metroButton4;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private MetroFramework.Controls.MetroPanel panel_principal;
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace FogGerenciadorDeVendas.Telas.Controles
+﻿namespace FogGerenciadorDeVendas.Telas.Controles.Produtos
 {
     partial class Produtos
     {
@@ -33,11 +33,13 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.produtos_grid = new MetroFramework.Controls.MetroGrid();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.btn_add_produto = new MetroFramework.Controls.MetroButton();
+            this.btn_edita_produto = new MetroFramework.Controls.MetroButton();
+            this.btn_remover_produto = new MetroFramework.Controls.MetroButton();
             this.txt_codigo_nome = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.produtos_grid)).BeginInit();
+            this.metroTile1.SuspendLayout();
             this.SuspendLayout();
             // 
             // produtos_grid
@@ -70,9 +72,10 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.produtos_grid.DefaultCellStyle = dataGridViewCellStyle5;
+            this.produtos_grid.EnableHeadersVisualStyles = false;
             this.produtos_grid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.produtos_grid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.produtos_grid.Location = new System.Drawing.Point(3, 92);
+            this.produtos_grid.Location = new System.Drawing.Point(3, 99);
             this.produtos_grid.MultiSelect = false;
             this.produtos_grid.Name = "produtos_grid";
             this.produtos_grid.ReadOnly = true;
@@ -88,49 +91,51 @@
             this.produtos_grid.RowHeadersVisible = false;
             this.produtos_grid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.produtos_grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.produtos_grid.Size = new System.Drawing.Size(712, 352);
+            this.produtos_grid.Size = new System.Drawing.Size(712, 345);
             this.produtos_grid.TabIndex = 0;
+            this.produtos_grid.SelectionChanged += new System.EventHandler(this.produtos_grid_SelectionChanged);
             // 
             // metroTile1
             // 
             this.metroTile1.ActiveControl = null;
+            this.metroTile1.Controls.Add(this.metroLabel1);
             this.metroTile1.Dock = System.Windows.Forms.DockStyle.Top;
             this.metroTile1.Location = new System.Drawing.Point(0, 0);
             this.metroTile1.Name = "metroTile1";
             this.metroTile1.Size = new System.Drawing.Size(718, 42);
             this.metroTile1.TabIndex = 1;
-            this.metroTile1.Text = "Produtos";
             this.metroTile1.UseSelectable = true;
             // 
-            // metroButton1
+            // btn_add_produto
             // 
-            this.metroButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton1.Location = new System.Drawing.Point(440, 60);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(75, 23);
-            this.metroButton1.TabIndex = 2;
-            this.metroButton1.Text = "metroButton1";
-            this.metroButton1.UseSelectable = true;
+            this.btn_add_produto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_add_produto.Location = new System.Drawing.Point(434, 55);
+            this.btn_add_produto.Name = "btn_add_produto";
+            this.btn_add_produto.Size = new System.Drawing.Size(75, 30);
+            this.btn_add_produto.TabIndex = 2;
+            this.btn_add_produto.Text = "Add";
+            this.btn_add_produto.UseSelectable = true;
+            this.btn_add_produto.Click += new System.EventHandler(this.btn_add_produto_Click);
             // 
-            // metroButton2
+            // btn_edita_produto
             // 
-            this.metroButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton2.Location = new System.Drawing.Point(530, 60);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(75, 23);
-            this.metroButton2.TabIndex = 3;
-            this.metroButton2.Text = "metroButton2";
-            this.metroButton2.UseSelectable = true;
+            this.btn_edita_produto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_edita_produto.Location = new System.Drawing.Point(538, 55);
+            this.btn_edita_produto.Name = "btn_edita_produto";
+            this.btn_edita_produto.Size = new System.Drawing.Size(75, 30);
+            this.btn_edita_produto.TabIndex = 3;
+            this.btn_edita_produto.Text = "Edit";
+            this.btn_edita_produto.UseSelectable = true;
             // 
-            // metroButton3
+            // btn_remover_produto
             // 
-            this.metroButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.metroButton3.Location = new System.Drawing.Point(620, 60);
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(75, 23);
-            this.metroButton3.TabIndex = 4;
-            this.metroButton3.Text = "metroButton3";
-            this.metroButton3.UseSelectable = true;
+            this.btn_remover_produto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_remover_produto.Location = new System.Drawing.Point(640, 55);
+            this.btn_remover_produto.Name = "btn_remover_produto";
+            this.btn_remover_produto.Size = new System.Drawing.Size(75, 30);
+            this.btn_remover_produto.TabIndex = 4;
+            this.btn_remover_produto.Text = "Remove";
+            this.btn_remover_produto.UseSelectable = true;
             // 
             // txt_codigo_nome
             // 
@@ -148,7 +153,7 @@
             this.txt_codigo_nome.CustomButton.Visible = false;
             this.txt_codigo_nome.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_codigo_nome.Lines = new string[0];
-            this.txt_codigo_nome.Location = new System.Drawing.Point(3, 48);
+            this.txt_codigo_nome.Location = new System.Drawing.Point(3, 55);
             this.txt_codigo_nome.MaxLength = 32767;
             this.txt_codigo_nome.Name = "txt_codigo_nome";
             this.txt_codigo_nome.PasswordChar = '\0';
@@ -166,19 +171,32 @@
             this.txt_codigo_nome.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.txt_codigo_nome.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_codigo_nome_KeyUp);
             // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel1.Location = new System.Drawing.Point(3, 8);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(89, 25);
+            this.metroLabel1.TabIndex = 6;
+            this.metroLabel1.Text = "Produtos";
+            // 
             // Produtos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.txt_codigo_nome);
-            this.Controls.Add(this.metroButton3);
-            this.Controls.Add(this.metroButton2);
-            this.Controls.Add(this.metroButton1);
+            this.Controls.Add(this.btn_remover_produto);
+            this.Controls.Add(this.btn_edita_produto);
+            this.Controls.Add(this.btn_add_produto);
             this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.produtos_grid);
             this.Name = "Produtos";
             this.Size = new System.Drawing.Size(718, 444);
             ((System.ComponentModel.ISupportInitialize)(this.produtos_grid)).EndInit();
+            this.metroTile1.ResumeLayout(false);
+            this.metroTile1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -187,9 +205,10 @@
 
         private MetroFramework.Controls.MetroGrid produtos_grid;
         private MetroFramework.Controls.MetroTile metroTile1;
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroButton metroButton2;
-        private MetroFramework.Controls.MetroButton metroButton3;
+        private MetroFramework.Controls.MetroButton btn_add_produto;
+        private MetroFramework.Controls.MetroButton btn_edita_produto;
+        private MetroFramework.Controls.MetroButton btn_remover_produto;
         private MetroFramework.Controls.MetroTextBox txt_codigo_nome;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
     }
 }

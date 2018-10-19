@@ -1,5 +1,5 @@
 ﻿using FogGerenciadorDeVendas.CrossCutting;
-using FogGerenciadorDeVendas.Telas.Controles;
+using FogGerenciadorDeVendas.Telas.Controles.Produtos;
 using System;
 using System.Windows.Forms;
 using Unity;
