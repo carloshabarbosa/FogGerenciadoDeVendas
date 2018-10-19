@@ -43,9 +43,13 @@
   <ItemGroup>
     <Compile Include="Consumos\Consumo.cs" />
     <Compile Include="Lancamentos\Lancamento.cs" />
+    <Compile Include="Produtos\Dto\ListarProdutoDto.cs" />
+    <Compile Include="Produtos\IProdutosRepositorio.cs" />
     <Compile Include="Produtos\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio\IRepositorio.cs" />
     <Compile Include="Vendas\Venda.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

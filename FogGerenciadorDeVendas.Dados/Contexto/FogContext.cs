@@ -9,12 +9,17 @@ namespace FogGerenciadorDeVendas.Dados.Contexto
 {
     public class FogContext : DbContext
     {
-        protected FogContext(DbContextOptions<FogContext> options): base(options) { }
+        public FogContext(): base() { }
 
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Venda> Vendas { get; set; }
         public DbSet<Consumo> Consumos{ get; set; }
         public DbSet<Lancamento> Lancamentos { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseMySql(@"Server=localhost;Database=FogDb;Uid=root;Pwd=leca2119;");
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -25,7 +30,7 @@ namespace FogGerenciadorDeVendas.Dados.Contexto
             modelBuilder.ApplyConfiguration(new ConsumoMapping());
             modelBuilder.ApplyConfiguration(new LancamentoMapping());
             modelBuilder.ApplyConfiguration(new ProdutoMapping());
-
         }
+
     }
 }
