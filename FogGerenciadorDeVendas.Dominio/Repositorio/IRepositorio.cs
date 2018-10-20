@@ -10,6 +10,7 @@ namespace FogGerenciadorDeVendas.Dominio.Repositorio
     {
         void Adicionar(TEntity item);
         void Remover(TEntity item);
+        void Editar();
         TEntity ObtemPorId(TId id);
         IQueryable<TEntity> Buscar();
     }

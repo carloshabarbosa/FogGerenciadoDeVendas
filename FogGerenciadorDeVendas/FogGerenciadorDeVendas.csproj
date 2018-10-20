@@ -195,11 +195,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensoes\MDIClientSupport.cs" />
-    <Compile Include="Telas\Controles\Produtos\Adicionar.cs">
+    <Compile Include="Telas\Controles\Produtos\Editar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Telas\Controles\Produtos\Adicionar.Designer.cs">
-      <DependentUpon>Adicionar.cs</DependentUpon>
+    <Compile Include="Telas\Controles\Produtos\Editar.Designer.cs">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Controles\Produtos\Cadastrar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Controles\Produtos\Cadastrar.Designer.cs">
+      <DependentUpon>Cadastrar.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Controles\Produtos\Produtos.cs">
       <SubType>UserControl</SubType>
@@ -228,8 +234,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Telas\Controles\Produtos\Adicionar.resx">
-      <DependentUpon>Adicionar.cs</DependentUpon>
+    <EmbeddedResource Include="Telas\Controles\Produtos\Editar.resx">
+      <DependentUpon>Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Controles\Produtos\Cadastrar.resx">
+      <DependentUpon>Cadastrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Controles\Produtos\Produtos.resx">
       <DependentUpon>Produtos.cs</DependentUpon>

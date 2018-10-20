@@ -33,11 +33,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.produtos_grid = new MetroFramework.Controls.MetroGrid();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.btn_add_produto = new MetroFramework.Controls.MetroButton();
             this.btn_edita_produto = new MetroFramework.Controls.MetroButton();
             this.btn_remover_produto = new MetroFramework.Controls.MetroButton();
             this.txt_codigo_nome = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.produtos_grid)).BeginInit();
             this.metroTile1.SuspendLayout();
             this.SuspendLayout();
@@ -106,6 +106,17 @@
             this.metroTile1.TabIndex = 1;
             this.metroTile1.UseSelectable = true;
             // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel1.Location = new System.Drawing.Point(3, 8);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(89, 25);
+            this.metroLabel1.TabIndex = 6;
+            this.metroLabel1.Text = "Produtos";
+            // 
             // btn_add_produto
             // 
             this.btn_add_produto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -126,6 +137,7 @@
             this.btn_edita_produto.TabIndex = 3;
             this.btn_edita_produto.Text = "Edit";
             this.btn_edita_produto.UseSelectable = true;
+            this.btn_edita_produto.Click += new System.EventHandler(this.btn_edita_produto_Click);
             // 
             // btn_remover_produto
             // 
@@ -136,6 +148,7 @@
             this.btn_remover_produto.TabIndex = 4;
             this.btn_remover_produto.Text = "Remove";
             this.btn_remover_produto.UseSelectable = true;
+            this.btn_remover_produto.Click += new System.EventHandler(this.btn_remover_produto_Click);
             // 
             // txt_codigo_nome
             // 
@@ -170,17 +183,6 @@
             this.txt_codigo_nome.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_codigo_nome.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.txt_codigo_nome.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_codigo_nome_KeyUp);
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel1.Location = new System.Drawing.Point(3, 8);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(89, 25);
-            this.metroLabel1.TabIndex = 6;
-            this.metroLabel1.Text = "Produtos";
             // 
             // Produtos
             // 

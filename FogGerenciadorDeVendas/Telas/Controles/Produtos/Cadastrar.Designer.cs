@@ -1,6 +1,6 @@
 ﻿namespace FogGerenciadorDeVendas.Telas.Controles.Produtos
 {
-    partial class Adicionar
+    partial class Cadastrar
     {
         /// <summary> 
         /// Required designer variable.

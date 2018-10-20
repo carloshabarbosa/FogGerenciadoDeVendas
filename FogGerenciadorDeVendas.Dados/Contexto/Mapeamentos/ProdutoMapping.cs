@@ -28,6 +28,9 @@ namespace FogGerenciadorDeVendas.Dados.Contexto.Mapeamentos
                 .HasColumnType("decimal(16,3)")
                 .IsRequired();
 
+            builder.Property(p => p.DataDeCadastro)
+                .IsRequired();
+
             builder.ToTable(nameof(Produto));
         }
     }

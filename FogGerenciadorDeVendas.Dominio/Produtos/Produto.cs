@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FogGerenciadorDeVendas.Dominio.Produtos
 {
@@ -26,6 +22,21 @@ namespace FogGerenciadorDeVendas.Dominio.Produtos
         {
             return !string.IsNullOrEmpty(Nome) &&
                 Valor > 0;
+        }
+
+        public void AlterarNome(string nome)
+        {
+            Nome = nome;
+        }
+
+        public void AlterarDescricacao(string descricao)
+        {
+            Descricao = descricao;
+        }
+
+        public void AlterarValor(decimal valor)
+        {
+            Valor = valor;
         }
     }
 }

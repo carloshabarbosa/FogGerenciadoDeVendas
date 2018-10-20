@@ -198,6 +198,7 @@ C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\obj\Debug\FogGerenciado
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\obj\Debug\FogGerenciadorDeVendas.Menu.resources
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\bin\Debug\FogGerenciadorDeVendas.CrossCutting.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\bin\Debug\FogGerenciadorDeVendas.CrossCutting.pdb
-C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\obj\Debug\FogGerenciadorDeVendas.Telas.Controles.Produtos.Adicionar.resources
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\obj\Debug\FogGerenciadorDeVendas.Telas.Controles.Produtos.Produtos.resources
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\obj\Debug\FogGerenciadorDeVendas.Telas.ErroCamposObrigatoriosNaoPreenchidos.resources
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\obj\Debug\FogGerenciadorDeVendas.Telas.Controles.Produtos.Editar.resources
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\obj\Debug\FogGerenciadorDeVendas.Telas.Controles.Produtos.Cadastrar.resources

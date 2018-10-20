@@ -41,5 +41,10 @@ namespace FogGerenciadorDeVendas.Dados.Repositorio
         {
             return _dbSet;
         }
+
+        public void Editar()
+        {
+            _context.SaveChanges();
+        }
     }
 }

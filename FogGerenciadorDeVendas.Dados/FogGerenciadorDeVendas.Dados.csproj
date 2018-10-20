@@ -157,6 +157,10 @@
     <Compile Include="Migrations\20181019023556_AlterandoTipoDeDadosDaColunaValor.designer.cs">
       <DependentUpon>20181019023556_AlterandoTipoDeDadosDaColunaValor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20181020121848_AdicionandoObrigatoriedadeNoCampoDataDeCadastro.cs" />
+    <Compile Include="Migrations\20181020121848_AdicionandoObrigatoriedadeNoCampoDataDeCadastro.designer.cs">
+      <DependentUpon>20181020121848_AdicionandoObrigatoriedadeNoCampoDataDeCadastro.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\FogContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorio\ProdutosRepositorio.cs" />
