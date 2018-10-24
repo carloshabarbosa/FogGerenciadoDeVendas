@@ -112,7 +112,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Consumos
                         });
                     }
 
-                    _consumoRepositorio.Editar();
+                    _consumoRepositorio.Salvar();
                 }
 
                 GridProdutosHelper.MontarGridProdutosReduzida(resultado_produtos_grid,
@@ -161,7 +161,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Consumos
                         DataDeLancamento = DateTime.Now
                     }).ToList();
 
-                    _consumoRepositorio.Editar();
+                    _consumoRepositorio.Salvar();
                 }
 
                 GridProdutosHelper.MontarGridProdutosReduzida(resultado_produtos_grid, lista);
@@ -207,7 +207,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Consumos
                         DataDeLancamento = DateTime.Now
                     }).ToList();
 
-                    _consumoRepositorio.Editar();
+                    _consumoRepositorio.Salvar();
 
                     MessageBox.Show(this, "\n\nConsumo lançado com sucesso.", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }

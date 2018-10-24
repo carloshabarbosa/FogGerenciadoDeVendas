@@ -52,7 +52,9 @@
     <Compile Include="Produtos\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorio\IRepositorio.cs" />
+    <Compile Include="Vendas\IVendaRepositorio.cs" />
     <Compile Include="Vendas\Venda.cs" />
+    <Compile Include="Vendas\VendaProdutos.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -149,6 +149,7 @@
     <Compile Include="Contexto\Mapeamentos\LancamentoMapping.cs" />
     <Compile Include="Contexto\Mapeamentos\ProdutoMapping.cs" />
     <Compile Include="Contexto\Mapeamentos\VendaMapping.cs" />
+    <Compile Include="Contexto\Mapeamentos\VendaProdutosMapping.cs" />
     <Compile Include="Migrations\20181017184852_initialcreate.cs" />
     <Compile Include="Migrations\20181017184852_initialcreate.designer.cs">
       <DependentUpon>20181017184852_initialcreate.cs</DependentUpon>
@@ -161,11 +162,20 @@
     <Compile Include="Migrations\20181020121848_AdicionandoObrigatoriedadeNoCampoDataDeCadastro.designer.cs">
       <DependentUpon>20181020121848_AdicionandoObrigatoriedadeNoCampoDataDeCadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20181024221415_AdicionandoTabelaVendaProdutos.cs" />
+    <Compile Include="Migrations\20181024221415_AdicionandoTabelaVendaProdutos.designer.cs">
+      <DependentUpon>20181024221415_AdicionandoTabelaVendaProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20181024222419_AlterandoERemovendoCamposDaVenda.cs" />
+    <Compile Include="Migrations\20181024222419_AlterandoERemovendoCamposDaVenda.designer.cs">
+      <DependentUpon>20181024222419_AlterandoERemovendoCamposDaVenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\FogContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorio\ConsumoRepositorio.cs" />
     <Compile Include="Repositorio\ProdutosRepositorio.cs" />
     <Compile Include="Repositorio\RepositorioBase.cs" />
+    <Compile Include="Repositorio\VendaRepositorio.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FogGerenciadorDeVendas.Dominio\FogGerenciadorDeVendas.Dominio.csproj">

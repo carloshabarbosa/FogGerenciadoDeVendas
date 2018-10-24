@@ -22,8 +22,18 @@ namespace FogGerenciadorDeVendas.Dominio.Consumos
         public string CodigoDaComanda { get; private set; }
         public int Quantidade { get; private set; }
         public int Situacao { get; private set; }
-        public DateTime DataDeAbertura { get; set; }
-        public DateTime? DataDeFechamento { get; set; }
+        public DateTime DataDeAbertura { get; private set; }
+        public DateTime? DataDeFechamento { get; private set; }
         public virtual List<Lancamento> Lancamentos { get; set; } = new List<Lancamento>();
+
+        public void AlterarDataDeFechamento(DateTime dataDeFechamento)
+        {
+            DataDeFechamento = dataDeFechamento;
+        }
+
+        public void AlterarSituacao(SituacaoConsumoEnum situacao)
+        {
+            Situacao = (int) situacao;
+        }
     }
 }

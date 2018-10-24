@@ -93,7 +93,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Produtos
                 {
                     try
                     {
-                        _produtoRepositorio.Editar();
+                        _produtoRepositorio.Salvar();
                         AlterarTelaHelper.AlterarTela((MetroPanel)Parent, Program.container.Resolve<Produtos>());
                     } 
                     catch (Exception ex)

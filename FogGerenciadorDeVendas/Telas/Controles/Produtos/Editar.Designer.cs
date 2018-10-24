@@ -173,7 +173,7 @@
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(131, 44);
             this.metroButton1.TabIndex = 8;
-            this.metroButton1.Text = "Editar";
+            this.metroButton1.Text = "Salvar";
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
@@ -208,9 +208,9 @@
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(136, 25);
             this.metroLabel4.TabIndex = 7;
-            this.metroLabel4.Text = "Editar Produto";
+            this.metroLabel4.Text = "Salvar Produto";
             // 
-            // Editar
+            // Salvar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

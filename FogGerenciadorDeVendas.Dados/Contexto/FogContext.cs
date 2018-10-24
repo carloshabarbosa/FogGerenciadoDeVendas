@@ -15,6 +15,7 @@ namespace FogGerenciadorDeVendas.Dados.Contexto
         public DbSet<Venda> Vendas { get; set; }
         public DbSet<Consumo> Consumos{ get; set; }
         public DbSet<Lancamento> Lancamentos { get; set; }
+        public DbSet<VendaProdutos> VendasProdutos{ get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -30,6 +31,7 @@ namespace FogGerenciadorDeVendas.Dados.Contexto
             modelBuilder.ApplyConfiguration(new ConsumoMapping());
             modelBuilder.ApplyConfiguration(new LancamentoMapping());
             modelBuilder.ApplyConfiguration(new ProdutoMapping());
+            modelBuilder.ApplyConfiguration(new VendaProdutosMapping());
         }
 
     }

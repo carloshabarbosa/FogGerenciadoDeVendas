@@ -3,14 +3,16 @@ using System;
 using FogGerenciadorDeVendas.Dados.Contexto;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace FogGerenciadorDeVendas.Dados.Migrations
 {
     [DbContext(typeof(FogContext))]
-    partial class FogContextModelSnapshot : ModelSnapshot
+    [Migration("20181024221014_AdicionandoTabelaVendaProdutos")]
+    partial class AdicionandoTabelaVendaProdutos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -96,7 +98,9 @@ namespace FogGerenciadorDeVendas.Dados.Migrations
 
                     b.Property<DateTime>("DataDaVenda");
 
-                    b.Property<int>("PorcentagemDeDesconto");
+                    b.Property<decimal>("PorcentagemDeDesconto");
+
+                    b.Property<decimal>("ValorComDesconto");
 
                     b.Property<decimal>("ValorTotal");
 
@@ -112,14 +116,11 @@ namespace FogGerenciadorDeVendas.Dados.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("DescricaoProduto")
-                        .IsRequired();
+                    b.Property<string>("DescricaoProduto");
 
-                    b.Property<string>("NomeProduto")
-                        .IsRequired();
+                    b.Property<string>("NomeProduto");
 
-                    b.Property<decimal>("ValorProduto")
-                        .HasColumnType("decimal(16,3)");
+                    b.Property<decimal>("ValorProduto");
 
                     b.Property<int>("VendaId");
 
