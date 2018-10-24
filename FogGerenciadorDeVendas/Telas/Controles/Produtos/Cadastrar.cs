@@ -5,6 +5,8 @@ using System.Text.RegularExpressions;
 using Unity;
 using FogGerenciadorDeVendas.Telas.Helper;
 using FogGerenciadorDeVendas.Dominio.Produtos;
+using MetroFramework;
+using System.Windows.Forms;
 
 namespace FogGerenciadorDeVendas.Telas.Controles.Produtos
 {
@@ -63,7 +65,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Produtos
         {
             if (!decimal.TryParse(txt_valor.Text.Replace("R$ ", "").Replace(",", "."), out var valor))
             {
-                Program.container.Resolve<ErroCamposObrigatoriosNaoPreenchidos>().Show();
+                MetroMessageBox.Show(this, "\n\nCampos obrigatórios não preenchidos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -71,7 +73,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Produtos
 
                 if (!produto.Validar())
                 {
-                    Program.container.Resolve<ErroCamposObrigatoriosNaoPreenchidos>().Show();
+                    MetroMessageBox.Show(this, "\n\nCampos obrigatórios não preenchidos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {

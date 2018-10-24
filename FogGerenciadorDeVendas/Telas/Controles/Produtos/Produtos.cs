@@ -1,4 +1,5 @@
 ﻿using FogGerenciadorDeVendas.Dominio.Produtos;
+using FogGerenciadorDeVendas.Telas.Controles.Produtos.Helper;
 using FogGerenciadorDeVendas.Telas.Helper;
 using MetroFramework;
 using MetroFramework.Controls;
@@ -13,34 +14,25 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Produtos
     public partial class Produtos : MetroUserControl
     {
         private readonly IProdutosRepositorio _produtosRepositorio;
+        private readonly ListarProdutosServico _listarProdutoService;
 
-        public Produtos(IProdutosRepositorio produtosRepositorio)
+        public Produtos(IProdutosRepositorio produtosRepositorio,
+            ListarProdutosServico listarProdutoService)
         {
             _produtosRepositorio = produtosRepositorio;
+            _listarProdutoService = listarProdutoService;
+
             InitializeComponent();
-            RecuperarProdutos();
+
+            MontarGridProdutos();
             btn_edita_produto.Enabled = false;
             btn_remover_produto.Enabled = false;
         }
         
 
-        public void RecuperarProdutos(string codigoOuNome = "")
+        public void MontarGridProdutos(string codigoOuNome = "")
         {
-            produtos_grid.DataSource = null;
-            produtos_grid.DataSource = _produtosRepositorio.PesquisarPorCodigoOuNome(codigoOuNome)
-                .Select(c => new
-                {
-                    Codigo = c.Id,
-                    c.Nome,
-                    c.Descricao,
-                    Valor = string.Format("{0:C}", c.Valor),
-                    c.DataDeCadastro
-                })
-                .ToList();
-
-            produtos_grid.Columns[2].HeaderText = "Descrição";
-            produtos_grid.Columns[4].HeaderText = "Data de cadastro";
-            produtos_grid.ClearSelection();
+            GridProdutosHelper.MontarGridProdutos(produtos_grid, _listarProdutoService.PesquisarPorCodigoOuNome(codigoOuNome));
         }
 
         private void txt_codigo_nome_KeyUp(object sender, KeyEventArgs e)
@@ -48,7 +40,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Produtos
             var codigoOuNome = txt_codigo_nome.Text;
             if (codigoOuNome.Length % 3 == 0 || codigoOuNome.Length == 1)
             {
-                RecuperarProdutos(codigoOuNome);
+                MontarGridProdutos(codigoOuNome);
             }
         }
 
@@ -90,7 +82,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Produtos
             {
                 var id = (int)produtos_grid.SelectedRows[0].Cells[0].Value;
                 _produtosRepositorio.Remover(_produtosRepositorio.ObtemPorId(id));
-                RecuperarProdutos();
+                MontarGridProdutos();
             }
         }
     }

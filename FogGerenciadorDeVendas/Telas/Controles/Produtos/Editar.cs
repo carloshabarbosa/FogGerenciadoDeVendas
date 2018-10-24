@@ -5,6 +5,8 @@ using System.Text.RegularExpressions;
 using Unity;
 using FogGerenciadorDeVendas.Telas.Helper;
 using FogGerenciadorDeVendas.Dominio.Produtos;
+using MetroFramework;
+using System.Windows.Forms;
 
 namespace FogGerenciadorDeVendas.Telas.Controles.Produtos
 {
@@ -35,8 +37,8 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Produtos
         private void metroTextBox2_TextChanged(object sender, EventArgs e)
         {
             //Remove previous formatting, or the decimal check will fail including leading zeros
-            string value = txt_valor.Text.Replace(",", "")
-                .Replace("R$", "").Replace(".", "").TrimStart('0');
+            string value = txt_valor.Text.Replace(",", ".")
+                .Replace("R$", "");
             decimal ul;
             //Check we are indeed handling a number
             if (decimal.TryParse(value, out ul))
@@ -76,7 +78,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Produtos
         {
             if (!decimal.TryParse(txt_valor.Text.Replace("R$ ", ""), out var valor))
             {
-                Program.container.Resolve<ErroCamposObrigatoriosNaoPreenchidos>().Show();
+                MetroMessageBox.Show(this, "\n\nCampos obrigatórios não preenchidos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -85,7 +87,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Produtos
                 produtoEditar.AlterarValor(valor);
                 if (!produtoEditar.Validar())
                 {
-                    Program.container.Resolve<ErroCamposObrigatoriosNaoPreenchidos>().Show();
+                    MetroMessageBox.Show(this, "\n\nCampos obrigatórios não preenchidos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {

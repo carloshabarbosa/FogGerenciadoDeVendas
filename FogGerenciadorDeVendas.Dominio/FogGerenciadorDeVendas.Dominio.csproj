@@ -42,9 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Consumos\Consumo.cs" />
+    <Compile Include="Consumos\Enums\SituacaoConsumoEnum.cs" />
+    <Compile Include="Consumos\IConsumoRepositorio.cs" />
+    <Compile Include="Consumos\InstanciarConsumoService.cs" />
     <Compile Include="Lancamentos\Lancamento.cs" />
     <Compile Include="Produtos\Dto\ListarProdutoDto.cs" />
     <Compile Include="Produtos\IProdutosRepositorio.cs" />
+    <Compile Include="Produtos\ListarProdutosServico.cs" />
     <Compile Include="Produtos\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorio\IRepositorio.cs" />

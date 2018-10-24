@@ -29,36 +29,38 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.btn_novo_consumo = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.panel_principal = new MetroFramework.Controls.MetroPanel();
             this.SuspendLayout();
             // 
-            // metroButton1
+            // btn_novo_consumo
             // 
-            this.metroButton1.Location = new System.Drawing.Point(23, 72);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(184, 79);
-            this.metroButton1.TabIndex = 0;
-            this.metroButton1.Text = "metroButton1";
-            this.metroButton1.UseSelectable = true;
+            this.btn_novo_consumo.Location = new System.Drawing.Point(5, 30);
+            this.btn_novo_consumo.Name = "btn_novo_consumo";
+            this.btn_novo_consumo.Size = new System.Drawing.Size(115, 79);
+            this.btn_novo_consumo.TabIndex = 0;
+            this.btn_novo_consumo.Text = "Consumo";
+            this.btn_novo_consumo.UseSelectable = true;
+            this.btn_novo_consumo.Click += new System.EventHandler(this.btn_novo_consumo_Click);
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(23, 172);
+            this.metroButton2.Location = new System.Drawing.Point(5, 130);
             this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(184, 79);
+            this.metroButton2.Size = new System.Drawing.Size(115, 79);
             this.metroButton2.TabIndex = 1;
-            this.metroButton2.Text = "metroButton2";
+            this.metroButton2.Text = "Vendas";
             this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
             // metroButton3
             // 
-            this.metroButton3.Location = new System.Drawing.Point(23, 272);
+            this.metroButton3.Location = new System.Drawing.Point(5, 230);
             this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(184, 79);
+            this.metroButton3.Size = new System.Drawing.Size(115, 79);
             this.metroButton3.TabIndex = 2;
             this.metroButton3.Text = "Produtos";
             this.metroButton3.UseSelectable = true;
@@ -66,9 +68,9 @@
             // 
             // metroButton4
             // 
-            this.metroButton4.Location = new System.Drawing.Point(23, 372);
+            this.metroButton4.Location = new System.Drawing.Point(5, 330);
             this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(184, 79);
+            this.metroButton4.Size = new System.Drawing.Size(115, 79);
             this.metroButton4.TabIndex = 3;
             this.metroButton4.Text = "metroButton4";
             this.metroButton4.UseSelectable = true;
@@ -83,9 +85,9 @@
             this.panel_principal.HorizontalScrollbarBarColor = true;
             this.panel_principal.HorizontalScrollbarHighlightOnWheel = false;
             this.panel_principal.HorizontalScrollbarSize = 10;
-            this.panel_principal.Location = new System.Drawing.Point(216, 30);
+            this.panel_principal.Location = new System.Drawing.Point(126, 30);
             this.panel_principal.Name = "panel_principal";
-            this.panel_principal.Size = new System.Drawing.Size(675, 457);
+            this.panel_principal.Size = new System.Drawing.Size(765, 457);
             this.panel_principal.TabIndex = 4;
             this.panel_principal.VerticalScrollbarBarColor = true;
             this.panel_principal.VerticalScrollbarHighlightOnWheel = false;
@@ -101,7 +103,7 @@
             this.Controls.Add(this.metroButton4);
             this.Controls.Add(this.metroButton3);
             this.Controls.Add(this.metroButton2);
-            this.Controls.Add(this.metroButton1);
+            this.Controls.Add(this.btn_novo_consumo);
             this.DisplayHeader = false;
             this.Movable = false;
             this.Name = "Menu";
@@ -119,7 +121,7 @@
 
         #endregion
 
-        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton btn_novo_consumo;
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroButton metroButton3;
         private MetroFramework.Controls.MetroButton metroButton4;

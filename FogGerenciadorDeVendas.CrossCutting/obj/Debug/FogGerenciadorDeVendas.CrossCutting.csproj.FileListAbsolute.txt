@@ -1,9 +1,5 @@
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\FogGerenciadorDeVendas.CrossCutting.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\FogGerenciadorDeVendas.CrossCutting.pdb
-C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\obj\Debug\FogGerenciadorDeVendas.CrossCutting.csprojAssemblyReference.cache
-C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\obj\Debug\FogGerenciadorDeVendas.CrossCutting.csproj.CoreCompileInputs.cache
-C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\obj\Debug\FogGerenciadorDeVendas.CrossCutting.dll
-C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\obj\Debug\FogGerenciadorDeVendas.CrossCutting.pdb
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\CommonServiceLocator.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\FogGerenciadorDeVendas.Dados.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\FogGerenciadorDeVendas.Dominio.dll
@@ -68,4 +64,8 @@ C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\System.Numerics.Vectors.xml
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\System.Buffers.xml
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\obj\Debug\FogGerenciadorDeVendas.CrossCutting.csprojAssemblyReference.cache
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\obj\Debug\FogGerenciadorDeVendas.CrossCutting.csproj.CoreCompileInputs.cache
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\obj\Debug\FogGerenciadorDeVendas.CrossCutting.csproj.CopyComplete
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\obj\Debug\FogGerenciadorDeVendas.CrossCutting.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\obj\Debug\FogGerenciadorDeVendas.CrossCutting.pdb
