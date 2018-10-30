@@ -49,7 +49,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Consumos
 
         private void txt_comanda_Leave(object sender, System.EventArgs e)
         {
-            var consumo = _instanciarConsumoService.RecuperarConsumo(txt_comanda.Text);
+            var consumo = _consumoRepositorio.RecuperarConsumoAtivoPeloCodigoDaComanda(txt_comanda.Text);
 
             GridProdutosHelper.MontarGridProdutosReduzida(resultado_produtos_grid, new List<ListarProdutoDto>());
 
@@ -85,6 +85,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Consumos
             else
             {
                 var consumo = _instanciarConsumoService.RecuperarConsumo(txt_comanda.Text);
+                lb_status_comanda.Text = ((SituacaoConsumoEnum) consumo.Situacao).ToString();
                 if (selecionar_produtos_grid.SelectedRows.Count == 1)
                 {
                     var produto = _produtoRepositorio

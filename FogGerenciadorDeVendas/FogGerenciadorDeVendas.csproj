@@ -300,7 +300,15 @@
       <Name>FogGerenciadorDeVendas.Dominio</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="icons\cart-plus-solid-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\dollar-sign-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\clipboard-list-solid.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\SQLitePCLRaw.lib.e_sqlite3.linux.1.1.11\build\net35\SQLitePCLRaw.lib.e_sqlite3.linux.targets" Condition="Exists('..\packages\SQLitePCLRaw.lib.e_sqlite3.linux.1.1.11\build\net35\SQLitePCLRaw.lib.e_sqlite3.linux.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

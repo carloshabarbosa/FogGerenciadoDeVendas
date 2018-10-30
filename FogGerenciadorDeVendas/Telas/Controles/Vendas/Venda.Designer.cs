@@ -35,8 +35,6 @@
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.txt_comanda = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.txt_valor_entrada = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.lb_status_comanda = new MetroFramework.Controls.MetroLabel();
             this.lb_codigo_comanda = new MetroFramework.Controls.MetroLabel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
@@ -118,49 +116,6 @@
             this.metroLabel1.TabIndex = 15;
             this.metroLabel1.Text = "Comanda *";
             // 
-            // txt_valor_entrada
-            // 
-            // 
-            // 
-            // 
-            this.txt_valor_entrada.CustomButton.Image = null;
-            this.txt_valor_entrada.CustomButton.Location = new System.Drawing.Point(111, 2);
-            this.txt_valor_entrada.CustomButton.Name = "";
-            this.txt_valor_entrada.CustomButton.Size = new System.Drawing.Size(23, 23);
-            this.txt_valor_entrada.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txt_valor_entrada.CustomButton.TabIndex = 1;
-            this.txt_valor_entrada.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txt_valor_entrada.CustomButton.UseSelectable = true;
-            this.txt_valor_entrada.CustomButton.Visible = false;
-            this.txt_valor_entrada.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.txt_valor_entrada.Lines = new string[0];
-            this.txt_valor_entrada.Location = new System.Drawing.Point(711, 104);
-            this.txt_valor_entrada.MaxLength = 32767;
-            this.txt_valor_entrada.Name = "txt_valor_entrada";
-            this.txt_valor_entrada.PasswordChar = '\0';
-            this.txt_valor_entrada.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txt_valor_entrada.SelectedText = "";
-            this.txt_valor_entrada.SelectionLength = 0;
-            this.txt_valor_entrada.SelectionStart = 0;
-            this.txt_valor_entrada.ShortcutsEnabled = true;
-            this.txt_valor_entrada.Size = new System.Drawing.Size(137, 28);
-            this.txt_valor_entrada.TabIndex = 18;
-            this.txt_valor_entrada.UseSelectable = true;
-            this.txt_valor_entrada.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txt_valor_entrada.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.txt_valor_entrada.TextChanged += new System.EventHandler(this.metroTextBox1_TextChanged);
-            this.txt_valor_entrada.Leave += new System.EventHandler(this.txt_valor_entrada_Leave);
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel2.Location = new System.Drawing.Point(555, 104);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(141, 25);
-            this.metroLabel2.TabIndex = 17;
-            this.metroLabel2.Text = "Valor da Entrada:";
-            // 
             // lb_status_comanda
             // 
             this.lb_status_comanda.AutoSize = true;
@@ -169,6 +124,7 @@
             this.lb_status_comanda.Name = "lb_status_comanda";
             this.lb_status_comanda.Size = new System.Drawing.Size(0, 0);
             this.lb_status_comanda.TabIndex = 29;
+            this.lb_status_comanda.UseCustomForeColor = true;
             // 
             // lb_codigo_comanda
             // 
@@ -208,7 +164,7 @@
             // 
             this.lb_valor_total.AutoSize = true;
             this.lb_valor_total.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.lb_valor_total.Location = new System.Drawing.Point(711, 182);
+            this.lb_valor_total.Location = new System.Drawing.Point(711, 151);
             this.lb_valor_total.Name = "lb_valor_total";
             this.lb_valor_total.Size = new System.Drawing.Size(67, 25);
             this.lb_valor_total.TabIndex = 31;
@@ -218,7 +174,7 @@
             // 
             this.metroLabel8.AutoSize = true;
             this.metroLabel8.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel8.Location = new System.Drawing.Point(555, 182);
+            this.metroLabel8.Location = new System.Drawing.Point(555, 151);
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Size = new System.Drawing.Size(50, 25);
             this.metroLabel8.TabIndex = 30;
@@ -291,8 +247,9 @@
             this.txt_porc_desconto.CustomButton.UseSelectable = true;
             this.txt_porc_desconto.CustomButton.Visible = false;
             this.txt_porc_desconto.FontSize = MetroFramework.MetroTextBoxSize.Tall;
-            this.txt_porc_desconto.Lines = new string[0];
-            this.txt_porc_desconto.Location = new System.Drawing.Point(711, 138);
+            this.txt_porc_desconto.Lines = new string[] {
+        "0"};
+            this.txt_porc_desconto.Location = new System.Drawing.Point(711, 107);
             this.txt_porc_desconto.MaxLength = 32767;
             this.txt_porc_desconto.Name = "txt_porc_desconto";
             this.txt_porc_desconto.PasswordChar = '\0';
@@ -303,6 +260,7 @@
             this.txt_porc_desconto.ShortcutsEnabled = true;
             this.txt_porc_desconto.Size = new System.Drawing.Size(67, 28);
             this.txt_porc_desconto.TabIndex = 34;
+            this.txt_porc_desconto.Text = "0";
             this.txt_porc_desconto.UseSelectable = true;
             this.txt_porc_desconto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_porc_desconto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -312,7 +270,7 @@
             // 
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel3.Location = new System.Drawing.Point(555, 138);
+            this.metroLabel3.Location = new System.Drawing.Point(555, 107);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(128, 25);
             this.metroLabel3.TabIndex = 33;
@@ -332,7 +290,7 @@
             // 
             this.metroLabel7.AutoSize = true;
             this.metroLabel7.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel7.Location = new System.Drawing.Point(784, 141);
+            this.metroLabel7.Location = new System.Drawing.Point(784, 110);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(26, 25);
             this.metroLabel7.TabIndex = 36;
@@ -342,7 +300,7 @@
             // 
             this.btn_fechar_venda.Enabled = false;
             this.btn_fechar_venda.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.btn_fechar_venda.Location = new System.Drawing.Point(717, 261);
+            this.btn_fechar_venda.Location = new System.Drawing.Point(717, 230);
             this.btn_fechar_venda.Name = "btn_fechar_venda";
             this.btn_fechar_venda.Size = new System.Drawing.Size(131, 40);
             this.btn_fechar_venda.TabIndex = 37;
@@ -366,8 +324,6 @@
             this.Controls.Add(this.lb_codigo_comanda);
             this.Controls.Add(this.metroLabel6);
             this.Controls.Add(this.metroLabel5);
-            this.Controls.Add(this.txt_valor_entrada);
-            this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.txt_comanda);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroTile1);
@@ -387,8 +343,6 @@
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroTextBox txt_comanda;
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroTextBox txt_valor_entrada;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel lb_status_comanda;
         private MetroFramework.Controls.MetroLabel lb_codigo_comanda;
         private MetroFramework.Controls.MetroLabel metroLabel6;

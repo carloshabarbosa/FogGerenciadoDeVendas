@@ -13,6 +13,7 @@ namespace FogGerenciadorDeVendas.Dominio.Vendas
             ValorTotal = valorTotal;
             PorcentagemDeDesconto = porcentagemDeDesconto;
             VendasProdutos = vendaProdutos;
+            DataDaVenda = DateTime.Now;
         }
 
         public int Id { get; set; }

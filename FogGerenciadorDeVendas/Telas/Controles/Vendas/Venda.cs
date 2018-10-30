@@ -32,24 +32,33 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Vendas
 
         private void txt_comanda_Leave(object sender, System.EventArgs e)
         {
-            var consumo = _instanciarConsumoService.RecuperarConsumo(txt_comanda.Text);
+            var consumo = _consumoRepositorio.RecuperarConsumoAtivoPeloCodigoDaComanda(txt_comanda.Text);
+            if (consumo == null)
+            {
+                lb_codigo_comanda.Text = txt_comanda.Text;
+                lb_status_comanda.Text = SituacaoConsumoEnum.Fechado.ToString();
+                lb_status_comanda.ForeColor = Color.Red;
+            }
+            else
+            {
 
-            GridProdutosHelper.MontarGridProdutosReduzida(resultado_produtos_grid, new List<ListarProdutoDto>());
+                GridProdutosHelper.MontarGridProdutosReduzida(resultado_produtos_grid, new List<ListarProdutoDto>());
 
-            lb_codigo_comanda.Text = consumo.CodigoDaComanda;
-            lb_status_comanda.Text = ((SituacaoConsumoEnum)consumo.Situacao).ToString();
-            lb_status_comanda.ForeColor = Color.Green;
-            GridProdutosHelper.MontarGridProdutosReduzida(resultado_produtos_grid, consumo.Lancamentos
-                .Select(c => new ListarProdutoDto
-                {
-                    Codigo = c.Produto.Id,
-                    Descricao = c.Produto.Descricao,
-                    Nome = c.Produto.Nome,
-                    DataDeCadastro = c.Produto.DataDeCadastro.ToString("dd/MM/yyyy"),
-                    Valor = c.Produto.Valor
-                }).ToList());
+                lb_codigo_comanda.Text = consumo.CodigoDaComanda;
+                lb_status_comanda.Text = ((SituacaoConsumoEnum) consumo.Situacao).ToString();
+                lb_status_comanda.ForeColor = Color.Green;
+                GridProdutosHelper.MontarGridProdutosReduzida(resultado_produtos_grid, consumo.Lancamentos
+                    .Select(c => new ListarProdutoDto
+                    {
+                        Codigo = c.Produto.Id,
+                        Descricao = c.Produto.Descricao,
+                        Nome = c.Produto.Nome,
+                        DataDeCadastro = c.Produto.DataDeCadastro.ToString("dd/MM/yyyy"),
+                        Valor = c.Produto.Valor
+                    }).ToList());
 
-            btn_fechar_venda.Enabled = true;
+                btn_fechar_venda.Enabled = true;
+            }
         }
 
         private void resultado_produtos_grid_DataSourceChanged(object sender, System.EventArgs e)
@@ -60,8 +69,6 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Vendas
         private decimal SomarValorTotal()
         {
             var valorTotal = SomarValoresDaLista();
-            valorTotal = SomarValorDaEntrada(valorTotal);
-
             valorTotal = CalcularDesconto(valorTotal);
 
             return valorTotal;
@@ -85,20 +92,6 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Vendas
             return 0;
         }
 
-        private decimal SomarValorDaEntrada(decimal valor)
-        {
-            if (!string.IsNullOrEmpty(txt_valor_entrada.Text))
-            {
-                if (decimal.TryParse(txt_valor_entrada.Text.Replace("R$ ", ""), out var valorASomar))
-                {
-                    valor += valorASomar;
-                }
-
-                return valor;
-            }
-
-            return valor;
-        }
 
         private decimal CalcularDesconto(decimal valorTotal)
         {
@@ -120,46 +113,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Vendas
             lb_valor_total.Text = $"{SomarValorTotal():C}";
         }
 
-        private void metroTextBox1_TextChanged(object sender, EventArgs e)
-        {
-            //Remove previous formatting, or the decimal check will fail including leading zeros
-            string value = txt_valor_entrada.Text.Replace(",", "")
-                .Replace("R$", "").Replace(".", "").TrimStart('0');
-            decimal ul;
-            //Check we are indeed handling a number
-            if (decimal.TryParse(value, out ul))
-            {
-                ul /= 100;
-                //Unsub the event so we don't enter a loop
-                txt_valor_entrada.TextChanged -= metroTextBox1_TextChanged;
-                //Format the text as currency
-                txt_valor_entrada.Text = string.Format(CultureInfo.CreateSpecificCulture("pt-BR"), "{0:C2}", ul);
-                txt_valor_entrada.TextChanged += metroTextBox1_TextChanged;
-                txt_valor_entrada.Select(txt_valor_entrada.Text.Length, 0);
-            }
-            else
-            {
-                txt_valor_entrada.Text = "R$ 0,00";
-            }
-            bool goodToGo = TextisValid(txt_valor_entrada.Text);
-
-            if (!goodToGo)
-            {
-                txt_valor_entrada.Text = txt_valor_entrada.Text.Substring(0, txt_valor_entrada.Text.Length - 1);
-            }
-        }
-
-        private bool TextisValid(string text)
-        {
-            Regex money = new Regex(@"^R\$\D(\d{1,3}(\,\d{1,3})*|(d+))(\.\d{2})?$");
-            return money.IsMatch(text);
-        }
-
-        private void txt_valor_entrada_Leave(object sender, EventArgs e)
-        {
-            lb_valor_total.Text = $"{SomarValorTotal():C}";
-        }
-
+       
         private void btn_delete_produto_selecionar_Click(object sender, EventArgs e)
         {
 
@@ -222,6 +176,8 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Vendas
 
                     MetroMessageBox.Show(this, "Venda finalizada com sucesso!", "Sucesso", MessageBoxButtons.OK,
                         MessageBoxIcon.Information);
+
+                    LimparCampos();
                 }
             }
             catch (Exception exception)
@@ -230,6 +186,14 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Vendas
                 throw;
             }
 
+        }
+
+        private void LimparCampos()
+        {
+            txt_comanda.Text = "";
+            GridProdutosHelper.MontarGridProdutosReduzida(resultado_produtos_grid, new List<ListarProdutoDto>());
+            lb_codigo_comanda.Text = "";
+            lb_status_comanda.Text = "";
         }
 
         private bool ValidarFechamentoVenda()

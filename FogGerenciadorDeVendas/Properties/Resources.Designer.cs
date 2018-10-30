@@ -61,6 +61,36 @@ namespace FogGerenciadorDeVendas.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cart_plus_solid_1 {
+            get {
+                object obj = ResourceManager.GetObject("cart-plus-solid-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clipboard_list_solid {
+            get {
+                object obj = ResourceManager.GetObject("clipboard-list-solid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dollar_sign_solid {
+            get {
+                object obj = ResourceManager.GetObject("dollar-sign-solid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0:C}.
         /// </summary>
         internal static string Venda_resultado_produtos_grid_DataSourceChanged__0_C_ {
