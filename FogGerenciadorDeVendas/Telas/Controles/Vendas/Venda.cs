@@ -63,10 +63,10 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Vendas
 
         private void resultado_produtos_grid_DataSourceChanged(object sender, System.EventArgs e)
         {
-            lb_valor_total.Text = $"{SomarValorTotal():C}";
+            lb_valor_total.Text = $"{SomarValorComDesconto():C}";
         }
 
-        private decimal SomarValorTotal()
+        private decimal SomarValorComDesconto()
         {
             var valorTotal = SomarValoresDaLista();
             valorTotal = CalcularDesconto(valorTotal);
@@ -110,7 +110,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Vendas
 
         private void txt_porc_desconto_Leave(object sender, System.EventArgs e)
         {
-            lb_valor_total.Text = $"{SomarValorTotal():C}";
+            lb_valor_total.Text = $"{SomarValorComDesconto():C}";
         }
 
        
@@ -157,9 +157,10 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Vendas
 
                     var listaProdutos = (List<ListarProdutoDto>)resultado_produtos_grid.DataSource;
 
-                    var valorTotal = SomarValorTotal();
+                    var valorComDesconto = SomarValorComDesconto();
+                    var valorTotal = SomarValoresDaLista();
 
-                    var venda = new Dominio.Vendas.Venda(consumo.Id, valorTotal, int.Parse(txt_porc_desconto.Text),
+                    var venda = new Dominio.Vendas.Venda(consumo.Id, valorTotal, valorComDesconto, int.Parse(txt_porc_desconto.Text),
                         listaProdutos.Select(l => new VendaProdutos
                         {
                             DescricaoProduto = l.Descricao,
@@ -220,6 +221,20 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Vendas
             }
 
             return true;
+        }
+
+        private void Venda_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void resultado_produtos_grid_SelectionChanged(object sender, EventArgs e)
+        {
+            btn_delete_produto_selecionar.Enabled = false;
+            if (resultado_produtos_grid.SelectedRows.Count == 1)
+            {
+                btn_delete_produto_selecionar.Enabled = true;
+            }
         }
     }
 }

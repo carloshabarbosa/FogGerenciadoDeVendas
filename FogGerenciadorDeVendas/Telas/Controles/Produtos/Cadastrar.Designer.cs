@@ -34,11 +34,11 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.txt_descricao = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.metroTile1.SuspendLayout();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.metroButton1 = new System.Windows.Forms.Button();
+            this.metroButton2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -77,7 +77,7 @@
             this.txt_nome.SelectionStart = 0;
             this.txt_nome.ShortcutsEnabled = true;
             this.txt_nome.Size = new System.Drawing.Size(266, 28);
-            this.txt_nome.TabIndex = 3;
+            this.txt_nome.TabIndex = 0;
             this.txt_nome.UseSelectable = true;
             this.txt_nome.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_nome.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -108,7 +108,7 @@
             this.txt_valor.SelectionStart = 0;
             this.txt_valor.ShortcutsEnabled = true;
             this.txt_valor.Size = new System.Drawing.Size(146, 28);
-            this.txt_valor.TabIndex = 5;
+            this.txt_valor.TabIndex = 1;
             this.txt_valor.UseSelectable = true;
             this.txt_valor.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_valor.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -151,7 +151,7 @@
             this.txt_descricao.SelectionStart = 0;
             this.txt_descricao.ShortcutsEnabled = true;
             this.txt_descricao.Size = new System.Drawing.Size(446, 136);
-            this.txt_descricao.TabIndex = 7;
+            this.txt_descricao.TabIndex = 2;
             this.txt_descricao.UseSelectable = true;
             this.txt_descricao.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_descricao.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -166,67 +166,94 @@
             this.metroLabel3.TabIndex = 6;
             this.metroLabel3.Text = "Descrição";
             // 
-            // metroButton1
+            // panel1
             // 
-            this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton1.Location = new System.Drawing.Point(179, 374);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(131, 44);
-            this.metroButton1.TabIndex = 8;
-            this.metroButton1.Text = "Adicionar";
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
-            // 
-            // metroButton2
-            // 
-            this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton2.Location = new System.Drawing.Point(330, 374);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(131, 44);
-            this.metroButton2.TabIndex = 9;
-            this.metroButton2.Text = "Cancelar";
-            this.metroButton2.UseSelectable = true;
-            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
-            // 
-            // metroTile1
-            // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.Controls.Add(this.metroLabel4);
-            this.metroTile1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroTile1.Location = new System.Drawing.Point(0, 0);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(637, 42);
-            this.metroTile1.TabIndex = 10;
-            this.metroTile1.UseSelectable = true;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.panel1.Location = new System.Drawing.Point(0, 39);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(500, 10);
+            this.panel1.TabIndex = 42;
             // 
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
+            this.metroLabel4.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel4.Location = new System.Drawing.Point(3, 9);
+            this.metroLabel4.Location = new System.Drawing.Point(8, 9);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(132, 25);
-            this.metroLabel4.TabIndex = 7;
-            this.metroLabel4.Text = "Novo Produto";
+            this.metroLabel4.TabIndex = 41;
+            this.metroLabel4.Text = "Novo produto";
+            this.metroLabel4.UseCustomBackColor = true;
             // 
-            // Adicionar
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(500, 39);
+            this.panel2.TabIndex = 43;
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.BackColor = System.Drawing.Color.Transparent;
+            this.metroButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.metroButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroButton1.FlatAppearance.BorderSize = 0;
+            this.metroButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.metroButton1.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+            this.metroButton1.Image = global::FogGerenciadorDeVendas.Properties.Resources.plus_solid_25;
+            this.metroButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.metroButton1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.metroButton1.Location = new System.Drawing.Point(182, 374);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(140, 35);
+            this.metroButton1.TabIndex = 3;
+            this.metroButton1.Text = "    Adicionar";
+            this.metroButton1.UseVisualStyleBackColor = false;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
+            // metroButton2
+            // 
+            this.metroButton2.BackColor = System.Drawing.Color.Transparent;
+            this.metroButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.metroButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroButton2.FlatAppearance.BorderSize = 0;
+            this.metroButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.metroButton2.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+            this.metroButton2.Image = global::FogGerenciadorDeVendas.Properties.Resources.minus_circle_solid_251;
+            this.metroButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.metroButton2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.metroButton2.Location = new System.Drawing.Point(328, 374);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(133, 35);
+            this.metroButton2.TabIndex = 4;
+            this.metroButton2.Text = "    Cancelar";
+            this.metroButton2.UseVisualStyleBackColor = false;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
+            // 
+            // Cadastrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroButton1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.metroLabel4);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.txt_descricao);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.txt_valor);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.txt_nome);
             this.Controls.Add(this.metroLabel1);
-            this.Name = "Adicionar";
-            this.Size = new System.Drawing.Size(637, 543);
-            this.metroTile1.ResumeLayout(false);
-            this.metroTile1.PerformLayout();
+            this.Name = "Cadastrar";
+            this.Size = new System.Drawing.Size(500, 470);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,9 +267,10 @@
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroTextBox txt_descricao;
         private MetroFramework.Controls.MetroLabel metroLabel3;
-        private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroButton metroButton2;
-        private MetroFramework.Controls.MetroTile metroTile1;
+        private System.Windows.Forms.Panel panel1;
         private MetroFramework.Controls.MetroLabel metroLabel4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button metroButton1;
+        private System.Windows.Forms.Button metroButton2;
     }
 }

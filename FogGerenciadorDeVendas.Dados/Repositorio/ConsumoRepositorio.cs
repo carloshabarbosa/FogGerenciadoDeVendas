@@ -20,7 +20,7 @@ namespace FogGerenciadorDeVendas.Dados.Repositorio
         {
             return Buscar().Include(c => c.Lancamentos).ThenInclude(c => c.Produto).FirstOrDefault(c =>
                 c.Situacao == (int) SituacaoConsumoEnum.Aberto &&
-                c.CodigoDaComanda.ToLower().Contains(codigoComanda.ToLower()));
+                c.CodigoDaComanda.ToLower() == codigoComanda.ToLower());
         }
     }
 }

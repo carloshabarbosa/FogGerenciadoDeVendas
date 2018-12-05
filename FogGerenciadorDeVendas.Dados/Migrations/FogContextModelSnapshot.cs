@@ -98,6 +98,9 @@ namespace FogGerenciadorDeVendas.Dados.Migrations
 
                     b.Property<int>("PorcentagemDeDesconto");
 
+                    b.Property<decimal>("ValorComDesconto")
+                        .HasColumnType("decimal(16,3)");
+
                     b.Property<decimal>("ValorTotal")
                         .HasColumnType("decimal(16,3)");
 

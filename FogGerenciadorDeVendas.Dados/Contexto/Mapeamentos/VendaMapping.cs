@@ -19,6 +19,10 @@ namespace FogGerenciadorDeVendas.Dados.Contexto.Mapeamentos
                 .HasColumnType("decimal(16,3)")
                 .IsRequired();
 
+            builder.Property(v => v.ValorComDesconto)
+                .HasColumnType("decimal(16,3)")
+                .IsRequired();
+
             builder.Property(v => v.PorcentagemDeDesconto);
 
             builder.Property(v => v.DataDaVenda)

@@ -86,6 +86,9 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Consumos
             {
                 var consumo = _instanciarConsumoService.RecuperarConsumo(txt_comanda.Text);
                 lb_status_comanda.Text = ((SituacaoConsumoEnum) consumo.Situacao).ToString();
+                lb_status_comanda.ForeColor = consumo.Situacao == SituacaoConsumoEnum.Aberto.GetHashCode() ? 
+                    Color.Green :
+                    Color.Red;
                 if (selecionar_produtos_grid.SelectedRows.Count == 1)
                 {
                     var produto = _produtoRepositorio
@@ -219,6 +222,23 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Consumos
             }
         }
 
+        private void selecionar_produtos_grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
+        }
+
+        private void resultado_produtos_grid_SelectionChanged(object sender, EventArgs e)
+        {
+            btn_delete_produto_selecionar.Enabled = false;
+            if (resultado_produtos_grid.SelectedRows.Count == 1)
+            {
+                btn_delete_produto_selecionar.Enabled = true;
+            }
+        }
+
+        private void Cadastrar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

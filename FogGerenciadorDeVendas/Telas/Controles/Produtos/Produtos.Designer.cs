@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.produtos_grid = new MetroFramework.Controls.MetroGrid();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.btn_add_produto = new MetroFramework.Controls.MetroButton();
-            this.btn_edita_produto = new MetroFramework.Controls.MetroButton();
-            this.btn_remover_produto = new MetroFramework.Controls.MetroButton();
             this.txt_codigo_nome = new MetroFramework.Controls.MetroTextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_add_produto = new System.Windows.Forms.Button();
+            this.btn_edita_produto = new System.Windows.Forms.Button();
+            this.btn_remover_produto = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.produtos_grid)).BeginInit();
-            this.metroTile1.SuspendLayout();
             this.SuspendLayout();
             // 
             // produtos_grid
@@ -55,23 +55,23 @@
             this.produtos_grid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.produtos_grid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.produtos_grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.produtos_grid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.produtos_grid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.produtos_grid.ColumnHeadersHeight = 30;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.produtos_grid.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.produtos_grid.DefaultCellStyle = dataGridViewCellStyle8;
             this.produtos_grid.EnableHeadersVisualStyles = false;
             this.produtos_grid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.produtos_grid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -80,75 +80,20 @@
             this.produtos_grid.Name = "produtos_grid";
             this.produtos_grid.ReadOnly = true;
             this.produtos_grid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.produtos_grid.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.produtos_grid.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.produtos_grid.RowHeadersVisible = false;
             this.produtos_grid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.produtos_grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.produtos_grid.Size = new System.Drawing.Size(712, 345);
+            this.produtos_grid.Size = new System.Drawing.Size(753, 345);
             this.produtos_grid.TabIndex = 0;
             this.produtos_grid.SelectionChanged += new System.EventHandler(this.produtos_grid_SelectionChanged);
-            // 
-            // metroTile1
-            // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.Controls.Add(this.metroLabel1);
-            this.metroTile1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.metroTile1.Location = new System.Drawing.Point(0, 0);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(718, 42);
-            this.metroTile1.TabIndex = 1;
-            this.metroTile1.UseSelectable = true;
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel1.Location = new System.Drawing.Point(3, 8);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(89, 25);
-            this.metroLabel1.TabIndex = 6;
-            this.metroLabel1.Text = "Produtos";
-            // 
-            // btn_add_produto
-            // 
-            this.btn_add_produto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_add_produto.Location = new System.Drawing.Point(434, 55);
-            this.btn_add_produto.Name = "btn_add_produto";
-            this.btn_add_produto.Size = new System.Drawing.Size(75, 30);
-            this.btn_add_produto.TabIndex = 2;
-            this.btn_add_produto.Text = "Add";
-            this.btn_add_produto.UseSelectable = true;
-            this.btn_add_produto.Click += new System.EventHandler(this.btn_add_produto_Click);
-            // 
-            // btn_edita_produto
-            // 
-            this.btn_edita_produto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_edita_produto.Location = new System.Drawing.Point(538, 55);
-            this.btn_edita_produto.Name = "btn_edita_produto";
-            this.btn_edita_produto.Size = new System.Drawing.Size(75, 30);
-            this.btn_edita_produto.TabIndex = 3;
-            this.btn_edita_produto.Text = "Edit";
-            this.btn_edita_produto.UseSelectable = true;
-            this.btn_edita_produto.Click += new System.EventHandler(this.btn_edita_produto_Click);
-            // 
-            // btn_remover_produto
-            // 
-            this.btn_remover_produto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_remover_produto.Location = new System.Drawing.Point(640, 55);
-            this.btn_remover_produto.Name = "btn_remover_produto";
-            this.btn_remover_produto.Size = new System.Drawing.Size(75, 30);
-            this.btn_remover_produto.TabIndex = 4;
-            this.btn_remover_produto.Text = "Remove";
-            this.btn_remover_produto.UseSelectable = true;
-            this.btn_remover_produto.Click += new System.EventHandler(this.btn_remover_produto_Click);
             // 
             // txt_codigo_nome
             // 
@@ -166,7 +111,7 @@
             this.txt_codigo_nome.CustomButton.Visible = false;
             this.txt_codigo_nome.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.txt_codigo_nome.Lines = new string[0];
-            this.txt_codigo_nome.Location = new System.Drawing.Point(3, 55);
+            this.txt_codigo_nome.Location = new System.Drawing.Point(3, 59);
             this.txt_codigo_nome.MaxLength = 32767;
             this.txt_codigo_nome.Name = "txt_codigo_nome";
             this.txt_codigo_nome.PasswordChar = '\0';
@@ -177,40 +122,135 @@
             this.txt_codigo_nome.SelectionStart = 0;
             this.txt_codigo_nome.ShortcutsEnabled = true;
             this.txt_codigo_nome.Size = new System.Drawing.Size(322, 30);
-            this.txt_codigo_nome.TabIndex = 5;
+            this.txt_codigo_nome.TabIndex = 0;
             this.txt_codigo_nome.UseSelectable = true;
             this.txt_codigo_nome.WaterMark = "Pesquise por código ou nome do produto";
             this.txt_codigo_nome.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txt_codigo_nome.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.txt_codigo_nome.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_codigo_nome_KeyUp);
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            this.panel1.Location = new System.Drawing.Point(0, 39);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(760, 10);
+            this.panel1.TabIndex = 31;
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel4.Location = new System.Drawing.Point(9, 8);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(89, 25);
+            this.metroLabel4.TabIndex = 30;
+            this.metroLabel4.Text = "Produtos";
+            this.metroLabel4.UseCustomBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(760, 39);
+            this.panel2.TabIndex = 41;
+            // 
+            // btn_add_produto
+            // 
+            this.btn_add_produto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_add_produto.BackColor = System.Drawing.Color.Transparent;
+            this.btn_add_produto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_add_produto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_add_produto.FlatAppearance.BorderSize = 0;
+            this.btn_add_produto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_add_produto.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+            this.btn_add_produto.Image = global::FogGerenciadorDeVendas.Properties.Resources.plus_solid_25;
+            this.btn_add_produto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_add_produto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_add_produto.Location = new System.Drawing.Point(333, 55);
+            this.btn_add_produto.Name = "btn_add_produto";
+            this.btn_add_produto.Size = new System.Drawing.Size(140, 35);
+            this.btn_add_produto.TabIndex = 1;
+            this.btn_add_produto.Text = "    Adicionar";
+            this.btn_add_produto.UseVisualStyleBackColor = false;
+            this.btn_add_produto.Click += new System.EventHandler(this.btn_add_produto_Click);
+            // 
+            // btn_edita_produto
+            // 
+            this.btn_edita_produto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_edita_produto.BackColor = System.Drawing.Color.Transparent;
+            this.btn_edita_produto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_edita_produto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_edita_produto.FlatAppearance.BorderSize = 0;
+            this.btn_edita_produto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_edita_produto.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+            this.btn_edita_produto.Image = global::FogGerenciadorDeVendas.Properties.Resources.edit_solid_25;
+            this.btn_edita_produto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_edita_produto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_edita_produto.Location = new System.Drawing.Point(470, 55);
+            this.btn_edita_produto.Name = "btn_edita_produto";
+            this.btn_edita_produto.Size = new System.Drawing.Size(140, 35);
+            this.btn_edita_produto.TabIndex = 2;
+            this.btn_edita_produto.Text = "    Editar";
+            this.btn_edita_produto.UseVisualStyleBackColor = false;
+            this.btn_edita_produto.Click += new System.EventHandler(this.btn_edita_produto_Click);
+            // 
+            // btn_remover_produto
+            // 
+            this.btn_remover_produto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_remover_produto.BackColor = System.Drawing.Color.Transparent;
+            this.btn_remover_produto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btn_remover_produto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_remover_produto.FlatAppearance.BorderSize = 0;
+            this.btn_remover_produto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_remover_produto.Font = new System.Drawing.Font("Segoe UI Light", 13F);
+            this.btn_remover_produto.Image = global::FogGerenciadorDeVendas.Properties.Resources.trash_alt_solid_25;
+            this.btn_remover_produto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_remover_produto.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btn_remover_produto.Location = new System.Drawing.Point(616, 54);
+            this.btn_remover_produto.Name = "btn_remover_produto";
+            this.btn_remover_produto.Size = new System.Drawing.Size(140, 35);
+            this.btn_remover_produto.TabIndex = 3;
+            this.btn_remover_produto.Text = "    Excluir";
+            this.btn_remover_produto.UseVisualStyleBackColor = false;
+            this.btn_remover_produto.Click += new System.EventHandler(this.btn_remover_produto_Click);
+            // 
             // Produtos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.txt_codigo_nome);
             this.Controls.Add(this.btn_remover_produto);
             this.Controls.Add(this.btn_edita_produto);
             this.Controls.Add(this.btn_add_produto);
-            this.Controls.Add(this.metroTile1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.metroLabel4);
+            this.Controls.Add(this.txt_codigo_nome);
             this.Controls.Add(this.produtos_grid);
+            this.Controls.Add(this.panel2);
             this.Name = "Produtos";
-            this.Size = new System.Drawing.Size(718, 444);
+            this.Size = new System.Drawing.Size(759, 444);
             ((System.ComponentModel.ISupportInitialize)(this.produtos_grid)).EndInit();
-            this.metroTile1.ResumeLayout(false);
-            this.metroTile1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private MetroFramework.Controls.MetroGrid produtos_grid;
-        private MetroFramework.Controls.MetroTile metroTile1;
-        private MetroFramework.Controls.MetroButton btn_add_produto;
-        private MetroFramework.Controls.MetroButton btn_edita_produto;
-        private MetroFramework.Controls.MetroButton btn_remover_produto;
         private MetroFramework.Controls.MetroTextBox txt_codigo_nome;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private System.Windows.Forms.Panel panel1;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btn_add_produto;
+        private System.Windows.Forms.Button btn_edita_produto;
+        private System.Windows.Forms.Button btn_remover_produto;
     }
 }

@@ -73,9 +73,29 @@ namespace FogGerenciadorDeVendas.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cart_plus_solid_25px {
+            get {
+                object obj = ResourceManager.GetObject("cart-plus-solid-25px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap clipboard_list_solid {
             get {
                 object obj = ResourceManager.GetObject("clipboard-list-solid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clipboard_list_solid_25 {
+            get {
+                object obj = ResourceManager.GetObject("clipboard-list-solid-25", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -91,11 +111,111 @@ namespace FogGerenciadorDeVendas.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dollar_sign_solid_10px {
+            get {
+                object obj = ResourceManager.GetObject("dollar-sign-solid-10px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap edit_solid_25 {
+            get {
+                object obj = ResourceManager.GetObject("edit-solid-25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minus_circle_solid_25 {
+            get {
+                object obj = ResourceManager.GetObject("minus-circle-solid-25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minus_circle_solid_251 {
+            get {
+                object obj = ResourceManager.GetObject("minus-circle-solid-251", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_solid_25 {
+            get {
+                object obj = ResourceManager.GetObject("plus-solid-25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap power_off_solid_25 {
+            get {
+                object obj = ResourceManager.GetObject("power-off-solid-25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap save_regular_25 {
+            get {
+                object obj = ResourceManager.GetObject("save-regular-25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trash_alt_solid_25 {
+            get {
+                object obj = ResourceManager.GetObject("trash-alt-solid-25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0:C}.
         /// </summary>
         internal static string Venda_resultado_produtos_grid_DataSourceChanged__0_C_ {
             get {
                 return ResourceManager.GetString("Venda_resultado_produtos_grid_DataSourceChanged__0_C_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap window_maximize_regular {
+            get {
+                object obj = ResourceManager.GetObject("window-maximize-regular", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap window_minimize_solid_25 {
+            get {
+                object obj = ResourceManager.GetObject("window-minimize-solid-25", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
