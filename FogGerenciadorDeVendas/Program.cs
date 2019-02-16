@@ -15,10 +15,17 @@ namespace FogGerenciadorDeVendas
         [STAThread]
         static void Main()
         {
+            var teste = new AutorizacaoHomolog.nfeAutorizacaoLoteRequest();
+            //var teste = new ConsultaChaveAcessoHomolog.
+            //var teste = new ConsultaReciboHomolog.
+            //var teste = new ConsultaStatusServiceHomolog.
+            //var teste = InutilizacaoHomolog.
             container = BuildContainer();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(container.Resolve<Home>());
+
+
         }
 
         public static IUnityContainer BuildContainer()

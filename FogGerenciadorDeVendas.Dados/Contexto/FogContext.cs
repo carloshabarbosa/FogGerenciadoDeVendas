@@ -19,7 +19,7 @@ namespace FogGerenciadorDeVendas.Dados.Contexto
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySql(@"Server=localhost;Database=FogDb;Uid=root;Pwd=leca2119;");
+            optionsBuilder.UseMySql(@"Server=localhost;Database=FogDb;Uid=root;Pwd=@leca2119;");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -158,6 +158,8 @@
     <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.1\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
@@ -194,6 +196,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connected Services\AutorizacaoHomolog\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ConsultaChaveAcessoHomolog\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ConsultaReciboHomolog\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ConsultaStatusServiceHomolog\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\InutilizacaoHomolog\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Extensoes\MDIClientSupport.cs" />
     <Compile Include="Telas\Controles\Consumos\Cadastrar.cs">
       <SubType>UserControl</SubType>
@@ -281,7 +308,28 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Connected Services\AutorizacaoHomolog\FogGerenciadorDeVendas.AutorizacaoHomolog.nfeAutorizacaoLoteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\AutorizacaoHomolog\NFeAutorizacao4.wsdl" />
+    <None Include="Connected Services\ConsultaChaveAcessoHomolog\FogGerenciadorDeVendas.ConsultaChaveAcessoHomolog.nfeConsultaNFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ConsultaChaveAcessoHomolog\NFeConsultaProtocolo4.wsdl" />
+    <None Include="Connected Services\ConsultaReciboHomolog\FogGerenciadorDeVendas.ConsultaReciboHomolog.nfeRetAutorizacaoLoteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ConsultaReciboHomolog\NFeRetAutorizacao4.wsdl" />
+    <None Include="Connected Services\ConsultaStatusServiceHomolog\FogGerenciadorDeVendas.ConsultaStatusServiceHomolog.nfeStatusServicoNFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ConsultaStatusServiceHomolog\NFeStatusServico4.wsdl" />
+    <None Include="Connected Services\InutilizacaoHomolog\FogGerenciadorDeVendas.InutilizacaoHomolog.nfeInutilizacaoNFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\InutilizacaoHomolog\NFeInutilizacao4.wsdl" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\System.Xml.XmlNode.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -293,7 +341,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FogGerenciadorDeVendas.CrossCutting\FogGerenciadorDeVendas.CrossCutting.csproj">
@@ -353,6 +403,73 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\AutorizacaoHomolog\" />
+    <WCFMetadataStorage Include="Connected Services\ConsultaChaveAcessoHomolog\" />
+    <WCFMetadataStorage Include="Connected Services\ConsultaReciboHomolog\" />
+    <WCFMetadataStorage Include="Connected Services\ConsultaStatusServiceHomolog\" />
+    <WCFMetadataStorage Include="Connected Services\InutilizacaoHomolog\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\AutorizacaoHomolog\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\AutorizacaoHomolog\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\AutorizacaoHomolog\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ConsultaReciboHomolog\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ConsultaReciboHomolog\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ConsultaReciboHomolog\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ConsultaChaveAcessoHomolog\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ConsultaChaveAcessoHomolog\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ConsultaChaveAcessoHomolog\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\InutilizacaoHomolog\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\InutilizacaoHomolog\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\InutilizacaoHomolog\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ConsultaStatusServiceHomolog\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ConsultaStatusServiceHomolog\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ConsultaStatusServiceHomolog\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\SQLitePCLRaw.lib.e_sqlite3.linux.1.1.11\build\net35\SQLitePCLRaw.lib.e_sqlite3.linux.targets" Condition="Exists('..\packages\SQLitePCLRaw.lib.e_sqlite3.linux.1.1.11\build\net35\SQLitePCLRaw.lib.e_sqlite3.linux.targets')" />
