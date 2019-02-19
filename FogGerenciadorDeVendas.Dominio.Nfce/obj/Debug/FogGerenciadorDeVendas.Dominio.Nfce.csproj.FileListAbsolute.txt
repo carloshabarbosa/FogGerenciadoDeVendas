@@ -1,0 +1,14 @@
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio.Nfce\bin\Debug\FogGerenciadorDeVendas.Dominio.Nfce.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio.Nfce\bin\Debug\FogGerenciadorDeVendas.Dominio.Nfce.pdb
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio.Nfce\bin\Debug\DFe.Classes.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio.Nfce\bin\Debug\DFe.Utils.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio.Nfce\bin\Debug\NFe.Classes.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio.Nfce\bin\Debug\NFe.Danfe.Base.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio.Nfce\bin\Debug\NFe.Danfe.Nativo.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio.Nfce\bin\Debug\NFe.Servicos.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio.Nfce\bin\Debug\NFe.Utils.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio.Nfce\obj\Debug\FogGerenciadorDeVendas.Dominio.Nfce.csprojAssemblyReference.cache
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio.Nfce\obj\Debug\FogGerenciadorDeVendas.Dominio.Nfce.csproj.CoreCompileInputs.cache
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio.Nfce\obj\Debug\FogGerenciadorDeVendas.Dominio.Nfce.csproj.CopyComplete
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio.Nfce\obj\Debug\FogGerenciadorDeVendas.Dominio.Nfce.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio.Nfce\obj\Debug\FogGerenciadorDeVendas.Dominio.Nfce.pdb
