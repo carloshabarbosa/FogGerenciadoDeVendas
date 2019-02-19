@@ -19,14 +19,12 @@ using NFe.Classes.Informacoes.Detalhe.Tributacao.Federal.Tipos;
 using NFe.Classes.Informacoes.Emitente;
 using NFe.Classes.Informacoes.Identificacao;
 using NFe.Classes.Informacoes.Identificacao.Tipos;
-using NFe.Classes.Informacoes.Observacoes;
 using NFe.Classes.Informacoes.Pagamento;
 using NFe.Classes.Informacoes.Total;
 using NFe.Classes.Informacoes.Transporte;
 using NFe.Classes.Servicos.Tipos;
 using NFe.Danfe.Base;
 using NFe.Danfe.Base.NFCe;
-using NFe.Danfe.Base.Properties;
 using NFe.Utils;
 using NFe.Utils.Email;
 using NFe.Utils.InformacoesSuplementares;
@@ -35,7 +33,7 @@ using NFe.Utils.NFe;
 
 namespace FogGerenciadorDeVendas.Dominio.Nfce.Nfce
 {
-    public class GeradorDeXml
+    public class GeradorDeNfce
     {
         private const VersaoServico versaoDoServico = VersaoServico.ve400;
         private const ModeloDocumento modeloDoDocumento = ModeloDocumento.NFCe;
@@ -58,7 +56,7 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce.Nfce
             }
         }
 
-        public GeradorDeXml()
+        public GeradorDeNfce()
         {
 
             CfgServico = ConfiguracaoServico.Instancia;
