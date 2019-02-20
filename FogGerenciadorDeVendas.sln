@@ -17,8 +17,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FogGerenciadorDeVendas.Dado
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FogGerenciadorDeVendas.CrossCutting", "FogGerenciadorDeVendas.CrossCutting\FogGerenciadorDeVendas.CrossCutting.csproj", "{694E7238-5080-440B-BCEF-12C9872C5C6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FogGerenciadorDeVendas.Dominio.Nfce", "FogGerenciadorDeVendas.Dominio.Nfce\FogGerenciadorDeVendas.Dominio.Nfce.csproj", "{614B37FE-7F77-408C-8D9B-2B990FD1D425}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,10 +39,6 @@ Global
 		{694E7238-5080-440B-BCEF-12C9872C5C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{694E7238-5080-440B-BCEF-12C9872C5C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{694E7238-5080-440B-BCEF-12C9872C5C6F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{614B37FE-7F77-408C-8D9B-2B990FD1D425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{614B37FE-7F77-408C-8D9B-2B990FD1D425}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{614B37FE-7F77-408C-8D9B-2B990FD1D425}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{614B37FE-7F77-408C-8D9B-2B990FD1D425}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,7 +48,6 @@ Global
 		{ED5A3CF0-B389-4D47-A58D-E08544B0ED7C} = {E7918B9B-4888-407D-9E60-43241348C357}
 		{D23F119B-3882-4625-A305-C398B53FC355} = {5E33C3C6-AF14-49DD-ABEE-D3F0002C3982}
 		{694E7238-5080-440B-BCEF-12C9872C5C6F} = {5E33C3C6-AF14-49DD-ABEE-D3F0002C3982}
-		{614B37FE-7F77-408C-8D9B-2B990FD1D425} = {E7918B9B-4888-407D-9E60-43241348C357}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {612F32B0-7808-45E0-BA4C-706728BBEDAA}

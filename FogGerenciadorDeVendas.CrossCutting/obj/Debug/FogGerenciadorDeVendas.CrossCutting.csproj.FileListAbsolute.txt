@@ -69,3 +69,9 @@ C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\obj\Debug\
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\obj\Debug\FogGerenciadorDeVendas.CrossCutting.csproj.CopyComplete
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\obj\Debug\FogGerenciadorDeVendas.CrossCutting.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\obj\Debug\FogGerenciadorDeVendas.CrossCutting.pdb
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\NFe.Classes.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\NFe.Utils.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\NFe.Danfe.Base.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\DFe.Classes.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\NFe.Servicos.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\DFe.Utils.dll

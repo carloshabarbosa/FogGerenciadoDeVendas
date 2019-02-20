@@ -20,5 +20,12 @@ namespace FogGerenciadorDeVendas.Dados.Repositorio
                     p.Nome.ToLower().Contains(codigoOuNome.ToLower()))
                 .ToList();
         }
+
+        public List<Produto> PesquisarPorIds(List<int> ids)
+        {
+            return Buscar()
+                .Where(p => ids.Contains(p.Id))
+                .ToList();
+        }
     }
 }

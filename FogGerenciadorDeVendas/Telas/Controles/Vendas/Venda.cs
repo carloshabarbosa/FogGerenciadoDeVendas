@@ -10,6 +10,8 @@ using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using FogGerenciadorDeVendas.Dominio.Nfce;
+using FogGerenciadorDeVendas.Dominio.Produtos;
 using FogGerenciadorDeVendas.Dominio.Vendas;
 using MetroFramework;
 
@@ -20,13 +22,17 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Vendas
         private readonly InstanciarConsumoService _instanciarConsumoService;
         private readonly IConsumoRepositorio _consumoRepositorio;
         private readonly IVendaRepositorio _vendaRepositorio;
+        private readonly IProdutosRepositorio _produtosRepositorio;
+        private readonly ServicosNfce _servicoNfce;
 
         public Venda(InstanciarConsumoService instanciarConsumoService, IConsumoRepositorio consumoRepositorio,
-            IVendaRepositorio vendaRepositorio)
+            IVendaRepositorio vendaRepositorio, IProdutosRepositorio produtosRepositorio)
         {
             _instanciarConsumoService = instanciarConsumoService;
             _consumoRepositorio = consumoRepositorio;
             _vendaRepositorio = vendaRepositorio;
+            _produtosRepositorio = produtosRepositorio;
+            _servicoNfce = new ServicosNfce();
             InitializeComponent();
         }
 
@@ -174,6 +180,14 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Vendas
                     consumo.AlterarSituacao(SituacaoConsumoEnum.Fechado);
 
                     _consumoRepositorio.Salvar();
+
+                    var produtos = _produtosRepositorio.PesquisarPorIds(listaProdutos.Select(p => p.Codigo).ToList());
+
+                    if (produtos != null && produtos.Any())
+                    {
+                        _servicoNfce.EnviarNfce(produtos);
+                    }
+                    
 
                     MetroMessageBox.Show(this, "Venda finalizada com sucesso!", "Sucesso", MessageBoxButtons.OK,
                         MessageBoxIcon.Information);

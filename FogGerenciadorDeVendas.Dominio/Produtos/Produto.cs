@@ -18,6 +18,21 @@ namespace FogGerenciadorDeVendas.Dominio.Produtos
         public bool Situacao { get; private set; }
         public DateTime DataDeCadastro { get; private set; }
 
+        //Campos para nota fiscar
+        public bool EmiteNota { get; set; }
+        public string Ncm { get; set; }
+        public int Cfop { get; set; }
+        public string UnidadeComercial { get; set; }
+        public decimal QuantidadeComercial { get; set; }
+        public decimal ValorUnitarioComercializacao { get; set; }
+        public decimal ValorDoProduto { get; set; }
+        public decimal ValorDoDesconto{ get; set; }
+        public string UnidadeTributavel { get; set; }
+        public decimal QuantidadeTributavel { get; set; }
+        public decimal ValorUnitarioTributacao { get; set; }
+
+        
+
         public bool Validar()
         {
             return !string.IsNullOrEmpty(Nome) &&

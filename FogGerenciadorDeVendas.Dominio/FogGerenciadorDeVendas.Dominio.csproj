@@ -31,6 +31,34 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DFe.Classes, Version=1.0.0.735, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\DFe.Classes.dll</HintPath>
+    </Reference>
+    <Reference Include="DFe.Utils, Version=1.0.0.735, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\DFe.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="NFe.Classes, Version=1.0.0.735, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\NFe.Classes.dll</HintPath>
+    </Reference>
+    <Reference Include="NFe.Danfe.Base, Version=1.0.0.735, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\NFe.Danfe.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="NFe.Danfe.Nativo, Version=1.0.0.735, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\NFe.Danfe.Nativo.dll</HintPath>
+    </Reference>
+    <Reference Include="NFe.Servicos, Version=1.0.0.735, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\NFe.Servicos.dll</HintPath>
+    </Reference>
+    <Reference Include="NFe.Utils, Version=1.0.0.735, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\NFe.Utils.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +74,9 @@
     <Compile Include="Consumos\IConsumoRepositorio.cs" />
     <Compile Include="Consumos\InstanciarConsumoService.cs" />
     <Compile Include="Lancamentos\Lancamento.cs" />
+    <Compile Include="Nfce\Configuracao.cs" />
+    <Compile Include="Nfce\GeradorDeNfce.cs" />
+    <Compile Include="Nfce\ServicosNfce.cs" />
     <Compile Include="Produtos\Dto\ListarProdutoDto.cs" />
     <Compile Include="Produtos\IProdutosRepositorio.cs" />
     <Compile Include="Produtos\ListarProdutosServico.cs" />
@@ -56,6 +87,14 @@
     <Compile Include="Vendas\Venda.cs" />
     <Compile Include="Vendas\VendaProdutos.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="dlls\DFe.Classes.dll" />
+    <Content Include="dlls\DFe.Utils.dll" />
+    <Content Include="dlls\NFe.Classes.dll" />
+    <Content Include="dlls\NFe.Danfe.Base.dll" />
+    <Content Include="dlls\NFe.Danfe.Nativo.dll" />
+    <Content Include="dlls\NFe.Servicos.dll" />
+    <Content Include="dlls\NFe.Utils.dll" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

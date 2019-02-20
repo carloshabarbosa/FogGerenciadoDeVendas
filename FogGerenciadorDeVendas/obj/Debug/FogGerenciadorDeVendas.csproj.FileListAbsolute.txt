@@ -212,3 +212,9 @@ C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\obj\Debug\pt-BR\FogGere
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\bin\Debug\ko-KP\FogGerenciadorDeVendas.resources.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\obj\Debug\FogGerenciadorDeVendas.Home.ko-KP.resources
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\obj\Debug\ko-KP\FogGerenciadorDeVendas.resources.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\bin\Debug\NFe.Classes.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\bin\Debug\NFe.Utils.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\bin\Debug\NFe.Danfe.Base.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\bin\Debug\DFe.Classes.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\bin\Debug\NFe.Servicos.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\bin\Debug\DFe.Utils.dll
