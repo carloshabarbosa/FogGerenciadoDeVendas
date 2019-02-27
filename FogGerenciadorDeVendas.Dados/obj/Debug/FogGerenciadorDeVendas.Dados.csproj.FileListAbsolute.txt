@@ -169,5 +169,5 @@ C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\bin\Debug\NFe.Cla
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\bin\Debug\NFe.Utils.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\bin\Debug\NFe.Danfe.Base.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\bin\Debug\DFe.Classes.dll
-C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\bin\Debug\NFe.Servicos.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\bin\Debug\DFe.Utils.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\bin\Debug\FogGerenciadorDeVendas.Dominio.dll.config

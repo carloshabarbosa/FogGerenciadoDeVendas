@@ -18,3 +18,5 @@ C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio\bin\Debug\NFe.D
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio\bin\Debug\NFe.Servicos.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio\bin\Debug\NFe.Utils.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio\obj\Debug\FogGerenciadorDeVendas.Dominio.csproj.CopyComplete
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio\bin\Debug\NFe.Wsdl.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dominio\bin\Debug\FogGerenciadorDeVendas.Dominio.dll.config

@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Security.Cryptography.X509Certificates;
 using DFe.Classes.Entidades;
 using DFe.Classes.Extensoes;
 using DFe.Classes.Flags;
 using DFe.Utils;
+using DFe.Utils.Assinatura;
 using FogGerenciadorDeVendas.Dominio.Produtos;
 using NFe.Classes;
 using NFe.Classes.Informacoes;
@@ -41,10 +43,9 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
         private const string Csc = "VFF5PWWRGXNE0CJWU99935GFHJHGXUJ3C4OJ";
         private readonly Configuracao _configuracoes;
         private readonly ConfiguracaoServico _cfgServico;
+        private readonly X509Certificate2 _cert;
 
-
-
-        public GeradorDeNfce(ConfiguracaoServico cfgServico)
+        public GeradorDeNfce(ConfiguracaoServico cfgServico, X509Certificate2 cert)
         {
             _cfgServico = cfgServico;
 
@@ -54,7 +55,8 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
                 CNPJ = "31808064000147",
                 IE = "9079550016",
                 xFant = "Joao Victor Spinoza",
-                xNome = "Joao Victor Spinoza"
+                xNome = "Joao Victor Spinoza",
+                CRT = CRT.SimplesNacional
             };
 
             var configuracaoDeEmail = new ConfiguracaoEmail("email@dominio.com", "senha", "Envio de NFE", "Teset123", "smtp.dominio.com", 587, true, true);
@@ -68,6 +70,10 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
                 configuracaoDeEmail,
                 configuracaoDanfeNfe
             );
+
+            _cert = cert;
+            _configuracoes.CfgServico.Certificado.Serial = _cert.SerialNumber;
+            
         }
 
         public NFe.Classes.NFe GerarNfce(int numeroDaNota, List<Produto> produtos)
@@ -81,7 +87,7 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
         {
             var nfe = GetNf(numero, produtos);
 
-            nfe.Assina();
+            nfe.Assina(_cfgServico, _cert);
 
             if (nfe.infNFe.ide.mod == ModeloDocumento.NFCe)
             {
@@ -91,7 +97,7 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
                 nfe.infNFeSupl.qrCode = nfe.infNFeSupl.ObterUrlQrCode(nfe, _configuracoes.ConfiguracaoDanfeNfce.VersaoQrCode, IdToken, Csc);
             }
 
-            nfe.Valida();
+            nfe.Valida(_cfgServico);
 
             return nfe;
         }
@@ -102,12 +108,10 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
             var nfe = new NFe.Classes.NFe
             {
                 infNFe = ObterInf(numero, produtos)
-
             };
 
             return nfe;
         }
-
 
         private infNFe ObterInf(int numero, List<Produto> produtos)
         {
@@ -282,8 +286,10 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
             // TODO: CPF na nota?
             var dest = new dest(versao)
             {
-                CNPJ = "99999999000191",
-                //CPF = "99999999999",
+                CPF = "07506178966",
+                xNome = "teste123",
+                indIEDest = indIEDest.NaoContribuinte,
+                email = "teste@teste.com"
             };
             //if (modelo == ModeloDocumento.NFe)
             //{
@@ -395,7 +401,7 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
             var p = new prod
             {
                 cProd = produto.Id.ToString().PadLeft(5, '0'),
-                //cEAN = "7770000000012",
+                cEAN = "7770000000012",
                 xProd = produto.Nome,
                 NCM = produto.Ncm,
                 CFOP = produto.Cfop,
@@ -404,7 +410,7 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
                 vUnCom = produto.ValorUnitarioComercializacao,
                 vProd = produto.Valor,
                 vDesc = produto.ValorDoDesconto,
-                //cEANTrib = "7770000000012",
+                cEANTrib = "7770000000012",
                 uTrib = produto.UnidadeTributavel,
                 qTrib = produto.QuantidadeTributavel,
                 vUnTrib = produto.ValorUnitarioTributacao,

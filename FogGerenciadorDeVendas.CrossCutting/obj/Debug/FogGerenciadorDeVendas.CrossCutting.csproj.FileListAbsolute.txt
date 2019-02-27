@@ -73,5 +73,5 @@ C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\NFe.Utils.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\NFe.Danfe.Base.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\DFe.Classes.dll
-C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\NFe.Servicos.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\DFe.Utils.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.CrossCutting\bin\Debug\FogGerenciadorDeVendas.Dominio.dll.config
