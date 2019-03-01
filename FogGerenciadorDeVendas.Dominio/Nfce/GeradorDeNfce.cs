@@ -44,6 +44,10 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
         private readonly Configuracao _configuracoes;
         private readonly ConfiguracaoServico _cfgServico;
         private readonly X509Certificate2 _cert;
+        private const string nfeEmitadaHomolog = "NF-E EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL";
+
+        private const string produtoNfeEmitidoHolog =
+            "NOTA FISCAL EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL";
 
         public GeradorDeNfce(ConfiguracaoServico cfgServico, X509Certificate2 cert)
         {
@@ -54,14 +58,18 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
             {
                 CNPJ = "31808064000147",
                 IE = "9079550016",
-                xFant = "Joao Victor Spinoza",
-                xNome = "Joao Victor Spinoza",
+                // ambiente produção
+                //xFant = "Joao Victor Spinoza", 
+                //xNome = "Joao Victor Spinoza",
+                xNome = nfeEmitadaHomolog,
+                xFant = nfeEmitadaHomolog,
                 CRT = CRT.SimplesNacional
             };
 
             var configuracaoDeEmail = new ConfiguracaoEmail("email@dominio.com", "senha", "Envio de NFE", "Teset123", "smtp.dominio.com", 587, true, true);
 
-            var configuracaoDanfeNfe = new ConfiguracaoDanfeNfce(NfceDetalheVendaNormal.UmaLinha, NfceDetalheVendaContigencia.UmaLinha);
+            var configuracaoDanfeNfe = 
+                new ConfiguracaoDanfeNfce(NfceDetalheVendaNormal.UmaLinha, NfceDetalheVendaContigencia.UmaLinha, versaoQrCode: VersaoQrCode.QrCodeVersao2);
 
             _configuracoes = new Configuracao(
                 GetEnderecoEmitente(),
@@ -69,11 +77,12 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
                 emitente,
                 configuracaoDeEmail,
                 configuracaoDanfeNfe
+
             );
 
             _cert = cert;
             _configuracoes.CfgServico.Certificado.Serial = _cert.SerialNumber;
-            
+
         }
 
         public NFe.Classes.NFe GerarNfce(int numeroDaNota, List<Produto> produtos)
@@ -287,7 +296,7 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
             var dest = new dest(versao)
             {
                 CPF = "07506178966",
-                xNome = "teste123",
+                xNome = nfeEmitadaHomolog,
                 indIEDest = indIEDest.NaoContribuinte,
                 email = "teste@teste.com"
             };
@@ -402,7 +411,8 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
             {
                 cProd = produto.Id.ToString().PadLeft(5, '0'),
                 cEAN = "7770000000012",
-                xProd = produto.Nome,
+                //xProd = produto.Nome,
+                xProd = produtoNfeEmitidoHolog,
                 NCM = produto.Ncm,
                 CFOP = produto.Cfop,
                 uCom = produto.UnidadeComercial,

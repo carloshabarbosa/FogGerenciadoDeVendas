@@ -25,22 +25,11 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
         private readonly GeradorDeNfce _geradorDeNfce;
         private readonly X509Certificate2 _cert;
         private const string CaminhoEnvioNota = "C:/fog_notas/Envio";
+        private const string CaminhoBackup = "C:/fog_notas/nfce/backup";
         private const string CaminhoRetorno = "C:/fog_notas/Retorno";
         private const string SufixoProcesso = "-proc-rec";
         private const string SufixoLote = "-num-lote";
-        //public ConfiguracaoServico CfgServico
-        //{
-        //    get
-        //    {
-        //        ConfiguracaoServico.Instancia.CopiarPropriedades(_cfgServico);
-        //        return _cfgServico;
-        //    }
-        //    set
-        //    {
-        //        _cfgServico = value;
-        //        ConfiguracaoServico.Instancia.CopiarPropriedades(value);
-        //    }
-        //}
+
 
         public ServicosNfce()
         {
@@ -97,6 +86,7 @@ namespace FogGerenciadorDeVendas.Dominio.Nfce
             xmlEnvio = xmlEnvio.Replace("<NFe>", "<NFe xmlns=\"http://www.portalfiscal.inf.br/nfe\">");
             dadosEnvio.LoadXml(xmlEnvio);
 
+            dadosEnvio.Save($"{CaminhoBackup}/{nfe.infNFe.Id.Substring(3)}-nfe.xml");
             dadosEnvio.Save($"{CaminhoEnvioNota}/{nfe.infNFe.Id.Substring(3)}-nfe.xml");
         }
     }
