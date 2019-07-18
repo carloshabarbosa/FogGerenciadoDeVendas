@@ -84,9 +84,6 @@
     <Compile Include="Consumos\IConsumoRepositorio.cs" />
     <Compile Include="Consumos\InstanciarConsumoService.cs" />
     <Compile Include="Lancamentos\Lancamento.cs" />
-    <Compile Include="Nfce\Configuracao.cs" />
-    <Compile Include="Nfce\GeradorDeNfce.cs" />
-    <Compile Include="Nfce\ServicosNfce.cs" />
     <Compile Include="Produtos\Dto\ListarProdutoDto.cs" />
     <Compile Include="Produtos\IProdutosRepositorio.cs" />
     <Compile Include="Produtos\ListarProdutosServico.cs" />

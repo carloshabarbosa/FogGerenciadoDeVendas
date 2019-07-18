@@ -165,9 +165,4 @@ C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\obj\Debug\FogGere
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\obj\Debug\FogGerenciadorDeVendas.Dados.csproj.CopyComplete
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\obj\Debug\FogGerenciadorDeVendas.Dados.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\obj\Debug\FogGerenciadorDeVendas.Dados.pdb
-C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\bin\Debug\NFe.Classes.dll
-C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\bin\Debug\NFe.Utils.dll
-C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\bin\Debug\NFe.Danfe.Base.dll
-C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\bin\Debug\DFe.Classes.dll
-C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\bin\Debug\DFe.Utils.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas.Dados\bin\Debug\FogGerenciadorDeVendas.Dominio.dll.config

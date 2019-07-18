@@ -31,34 +31,6 @@ namespace FogGerenciadorDeVendas.Dados.Contexto.Mapeamentos
             builder.Property(p => p.DataDeCadastro)
                 .IsRequired();
 
-            builder.Property(p => p.EmiteNota);
-
-            builder.Property(p => p.Ncm);
-
-            builder.Property(p => p.Cfop);
-
-            builder.Property(p => p.UnidadeComercial);
-
-            builder.Property(p => p.QuantidadeComercial)
-                .HasColumnType("decimal(16,3)");
-
-            builder.Property(p => p.ValorUnitarioComercializacao)
-                .HasColumnType("decimal(16,3)");
-
-            builder.Property(p => p.ValorDoProduto)
-                .HasColumnType("decimal(16,3)");
-
-            builder.Property(p => p.ValorDoDesconto)
-                .HasColumnType("decimal(16,3)");
-
-            builder.Property(p => p.UnidadeTributavel);
-
-            builder.Property(p => p.QuantidadeTributavel)
-                .HasColumnType("decimal(16,3)");
-
-            builder.Property(p => p.ValorUnitarioTributacao)
-                .HasColumnType("decimal(16,3)");
-
             builder.ToTable(nameof(Produto));
         }
     }

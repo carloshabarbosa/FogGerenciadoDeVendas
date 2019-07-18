@@ -68,46 +68,18 @@ namespace FogGerenciadorDeVendas.Dados.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<int>("Cfop");
-
                     b.Property<DateTime>("DataDeCadastro");
 
                     b.Property<string>("Descricao")
                         .HasMaxLength(500);
 
-                    b.Property<bool>("EmiteNota");
-
-                    b.Property<string>("Ncm");
-
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(250);
 
-                    b.Property<decimal>("QuantidadeComercial")
-                        .HasColumnType("decimal(16,3)");
-
-                    b.Property<decimal>("QuantidadeTributavel")
-                        .HasColumnType("decimal(16,3)");
-
                     b.Property<bool>("Situacao");
 
-                    b.Property<string>("UnidadeComercial");
-
-                    b.Property<string>("UnidadeTributavel");
-
                     b.Property<decimal>("Valor")
-                        .HasColumnType("decimal(16,3)");
-
-                    b.Property<decimal>("ValorDoDesconto")
-                        .HasColumnType("decimal(16,3)");
-
-                    b.Property<decimal>("ValorDoProduto")
-                        .HasColumnType("decimal(16,3)");
-
-                    b.Property<decimal>("ValorUnitarioComercializacao")
-                        .HasColumnType("decimal(16,3)");
-
-                    b.Property<decimal>("ValorUnitarioTributacao")
                         .HasColumnType("decimal(16,3)");
 
                     b.HasKey("Id");

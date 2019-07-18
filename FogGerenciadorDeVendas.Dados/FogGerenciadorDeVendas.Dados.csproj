@@ -178,10 +178,6 @@
     <Compile Include="Migrations\20181126225538_AdicionandoValorComDescontoNaTabelaDeVenda.designer.cs">
       <DependentUpon>20181126225538_AdicionandoValorComDescontoNaTabelaDeVenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\20190220011523_adicionandocamposparaemissaodenota.cs" />
-    <Compile Include="Migrations\20190220011523_adicionandocamposparaemissaodenota.designer.cs">
-      <DependentUpon>20190220011523_adicionandocamposparaemissaodenota.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\FogContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorio\ConsumoRepositorio.cs" />
