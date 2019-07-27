@@ -37,6 +37,8 @@ namespace FogGerenciadorDeVendas
             this.btn_pagamento = new System.Windows.Forms.Button();
             this.btn_novo_consumo = new System.Windows.Forms.Button();
             this.panel_principal = new MetroFramework.Controls.MetroPanel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btn_rel_venda = new System.Windows.Forms.Button();
             this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,6 +46,8 @@ namespace FogGerenciadorDeVendas
             // 
             resources.ApplyResources(this.metroPanel1, "metroPanel1");
             this.metroPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.metroPanel1.Controls.Add(this.button2);
+            this.metroPanel1.Controls.Add(this.btn_rel_venda);
             this.metroPanel1.Controls.Add(this.panel_detalhe_menu);
             this.metroPanel1.Controls.Add(this.btn_produtos);
             this.metroPanel1.Controls.Add(this.btn_pagamento);
@@ -56,6 +60,7 @@ namespace FogGerenciadorDeVendas
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
+            this.metroPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.metroPanel1_Paint);
             // 
             // panel_detalhe_menu
             // 
@@ -102,6 +107,22 @@ namespace FogGerenciadorDeVendas
             this.panel_principal.VerticalScrollbarSize = 10;
             this.panel_principal.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_principal_Paint);
             // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // btn_rel_venda
+            // 
+            resources.ApplyResources(this.btn_rel_venda, "btn_rel_venda");
+            this.btn_rel_venda.FlatAppearance.BorderSize = 0;
+            this.btn_rel_venda.Name = "btn_rel_venda";
+            this.btn_rel_venda.UseVisualStyleBackColor = true;
+            this.btn_rel_venda.Click += new System.EventHandler(this.btn_rel_venda_Click);
+            // 
             // Home
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -124,6 +145,8 @@ namespace FogGerenciadorDeVendas
         private Button btn_produtos;
         private Button btn_pagamento;
         private Panel panel_detalhe_menu;
+        private Button button2;
+        private Button btn_rel_venda;
     }
 }
 

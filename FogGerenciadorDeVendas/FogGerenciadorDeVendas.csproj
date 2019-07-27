@@ -39,6 +39,9 @@
     <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
       <HintPath>..\packages\Unity.5.8.11\lib\net46\CommonServiceLocator.dll</HintPath>
     </Reference>
+    <Reference Include="EPPlus, Version=4.5.3.2, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.3.2\lib\net40\EPPlus.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -111,6 +114,7 @@
     <Reference Include="Pomelo.JsonObject, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Pomelo.JsonObject.2.0.0\lib\netstandard2.0\Pomelo.JsonObject.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
     <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
       <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
     </Reference>
@@ -159,6 +163,7 @@
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.1\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
@@ -247,6 +252,12 @@
     <Compile Include="Telas\Controles\Produtos\Produtos.Designer.cs">
       <DependentUpon>Produtos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Controles\Relatorios\RelatorioDeVenda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Telas\Controles\Relatorios\RelatorioDeVenda.Designer.cs">
+      <DependentUpon>RelatorioDeVenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Controles\Vendas\Venda.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -279,6 +290,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Controles\Produtos\Produtos.resx">
       <DependentUpon>Produtos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Controles\Relatorios\RelatorioDeVenda.resx">
+      <DependentUpon>RelatorioDeVenda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Controles\Vendas\Venda.resx">
       <DependentUpon>Venda.cs</DependentUpon>

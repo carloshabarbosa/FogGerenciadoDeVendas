@@ -173,6 +173,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Vendas
 
                     consumo.AlterarDataDeFechamento(DateTime.Now);
                     consumo.AlterarSituacao(SituacaoConsumoEnum.Fechado);
+                    consumo.AlterarQuantidade(listaProdutos.Count);
 
                     _consumoRepositorio.Salvar();
 

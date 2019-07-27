@@ -35,5 +35,10 @@ namespace FogGerenciadorDeVendas.Dominio.Consumos
         {
             Situacao = (int) situacao;
         }
+
+        public void AlterarQuantidade(int quantidade)
+        {
+            Quantidade = quantidade;
+        } 
     }
 }

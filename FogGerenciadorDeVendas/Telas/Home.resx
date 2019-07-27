@@ -121,14 +121,111 @@
   <data name="metroPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left</value>
   </data>
+  <data name="button2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt</value>
+  </data>
+  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAIZJREFUSEvt
+        jUEKgEAMxPak/3+xlhFFhxQq1osY6GFiWMfPXZbTdYDvoXwAvocyodJigzKh0mKDMqHSYoMygVp3vgXK
+        BGrd+RYoE6h151ugDMhXnG+BMiBfcb4FyoB8xfkWKAPyFedboAymOPfU7nvW2vDmEBfZzTd/8tah7D5B
+        Hzrvp8oYK0RW5SjL+D6BAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="button2.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 216</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 54</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Rel. Detalhe Venda</value>
+  </data>
+  <data name="button2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>metroPanel1</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btn_rel_venda.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="btn_rel_venda.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="btn_rel_venda.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt</value>
+  </data>
+  <data name="btn_rel_venda.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAIZJREFUSEvt
+        jUEKgEAMxPak/3+xlhFFhxQq1osY6GFiWMfPXZbTdYDvoXwAvocyodJigzKh0mKDMqHSYoMygVp3vgXK
+        BGrd+RYoE6h151ugDMhXnG+BMiBfcb4FyoB8xfkWKAPyFedboAymOPfU7nvW2vDmEBfZzTd/8tah7D5B
+        Hzrvp8oYK0RW5SjL+D6BAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btn_rel_venda.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="btn_rel_venda.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_rel_venda.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 162</value>
+  </data>
+  <data name="btn_rel_venda.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 54</value>
+  </data>
+  <data name="btn_rel_venda.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btn_rel_venda.Text" xml:space="preserve">
+    <value>Rel. Venda</value>
+  </data>
+  <data name="&gt;&gt;btn_rel_venda.Name" xml:space="preserve">
+    <value>btn_rel_venda</value>
+  </data>
+  <data name="&gt;&gt;btn_rel_venda.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_rel_venda.Parent" xml:space="preserve">
+    <value>metroPanel1</value>
+  </data>
+  <data name="&gt;&gt;btn_rel_venda.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="panel_detalhe_menu.Location" type="System.Drawing.Point, System.Drawing">
     <value>-1, 0</value>
   </data>
   <data name="panel_detalhe_menu.Size" type="System.Drawing.Size, System.Drawing">
     <value>10, 54</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="panel_detalhe_menu.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -145,7 +242,7 @@
     <value>metroPanel1</value>
   </data>
   <data name="&gt;&gt;panel_detalhe_menu.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="btn_produtos.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -163,7 +260,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_produtos.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 108</value>
+    <value>9, 108</value>
   </data>
   <data name="btn_produtos.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 54</value>
@@ -184,7 +281,7 @@
     <value>metroPanel1</value>
   </data>
   <data name="&gt;&gt;btn_produtos.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="btn_pagamento.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -202,7 +299,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_pagamento.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 54</value>
+    <value>9, 54</value>
   </data>
   <data name="btn_pagamento.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 54</value>
@@ -223,7 +320,7 @@
     <value>metroPanel1</value>
   </data>
   <data name="&gt;&gt;btn_pagamento.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="btn_novo_consumo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Zoom</value>
@@ -241,7 +338,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_novo_consumo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 0</value>
+    <value>9, 0</value>
   </data>
   <data name="btn_novo_consumo.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 54</value>
@@ -262,7 +359,7 @@
     <value>metroPanel1</value>
   </data>
   <data name="&gt;&gt;btn_novo_consumo.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="metroPanel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 5</value>

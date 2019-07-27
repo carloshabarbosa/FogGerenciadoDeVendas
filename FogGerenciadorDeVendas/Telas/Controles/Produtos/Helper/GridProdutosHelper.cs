@@ -16,7 +16,9 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Produtos.Helper
             gridProdutos.DataSource = dataList;
 
             gridProdutos.Columns[2].HeaderText = "Descrição";
-            gridProdutos.Columns[4].HeaderText = "Data de cadastro";
+            gridProdutos.Columns[3].HeaderText = "Valor";
+            gridProdutos.Columns[4].Visible = false;
+            gridProdutos.Columns[5].HeaderText = "Data de cadastro";
             gridProdutos.ClearSelection();
         }
 

@@ -122,5 +122,26 @@ namespace FogGerenciadorDeVendas
         {
             panel_principal.Controls[0].Size = panel_principal.Size;
         }
+
+        private void metroPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_rel_venda_Click(object sender, EventArgs e)
+        {
+            ExibirDetalheMenu();
+            panel_detalhe_menu.Height = btn_rel_venda.Height;
+            panel_detalhe_menu.Top = btn_rel_venda.Top;
+            var produtos = Program.container.Resolve<Telas.Controles.Relatorios.RelatorioDeVenda>();
+            produtos.Size = panel_principal.Size;
+            panel_principal.Controls.Clear();
+            panel_principal.Controls.Add(produtos);
+        }
     }
 }

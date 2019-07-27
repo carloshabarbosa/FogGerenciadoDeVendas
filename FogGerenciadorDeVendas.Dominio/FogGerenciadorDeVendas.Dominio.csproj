@@ -90,6 +90,7 @@
     <Compile Include="Produtos\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorio\IRepositorio.cs" />
+    <Compile Include="Vendas\Dtos\RelatorioDeVendaDto.cs" />
     <Compile Include="Vendas\IVendaRepositorio.cs" />
     <Compile Include="Vendas\Venda.cs" />
     <Compile Include="Vendas\VendaProdutos.cs" />
@@ -104,13 +105,6 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <Content Include="dlls\DFe.Classes.dll" />
-    <Content Include="dlls\DFe.Utils.dll" />
-    <Content Include="dlls\NFe.Classes.dll" />
-    <Content Include="dlls\NFe.Danfe.Base.dll" />
-    <Content Include="dlls\NFe.Danfe.Nativo.dll" />
-    <Content Include="dlls\NFe.Servicos.dll" />
-    <Content Include="dlls\NFe.Utils.dll" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -669,5 +663,6 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\AutorizacaoHomolog\" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

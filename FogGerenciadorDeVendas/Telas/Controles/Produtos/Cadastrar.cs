@@ -63,7 +63,7 @@ namespace FogGerenciadorDeVendas.Telas.Controles.Produtos
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            if (!decimal.TryParse(txt_valor.Text.Replace("R$ ", "").Replace(",", "."), out var valor))
+            if (!decimal.TryParse(txt_valor.Text.Replace("R$ ", ""), out var valor))
             {
                 MetroMessageBox.Show(this, "\n\nCampos obrigatórios não preenchidos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

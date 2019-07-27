@@ -213,3 +213,6 @@ C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\bin\Debug\ko-KP\FogGere
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\obj\Debug\FogGerenciadorDeVendas.Home.ko-KP.resources
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\obj\Debug\ko-KP\FogGerenciadorDeVendas.resources.dll
 C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\bin\Debug\FogGerenciadorDeVendas.Dominio.dll.config
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\obj\Debug\FogGerenciadorDeVendas.Telas.Controles.Relatorios.RelatorioDeVenda.resources
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\bin\Debug\EPPlus.dll
+C:\Projetos\FogGerenciadoDeVendas\FogGerenciadorDeVendas\bin\Debug\EPPlus.xml
